@@ -1,0 +1,136 @@
+@use '../../styles/absctract/_mixins'
+	
+.header 
+	grid-column: center-start / center-end
+	padding-top: 16px
+	margin-bottom: var
+	&__top 
+		display: flex 
+		flex-wrap: wrap 
+		justify-content: space-between
+		align-items: center
+		gap: 5rem
+		padding: 1.6rem 3.2rem
+		border-radius: var(--br-small)
+		background-color: var(--white-color)
+
+		margin-bottom: 1.6rem
+	&__bottom 
+		max-width: 63rem 
+		margin: 0 auto
+		padding: 1.6rem 3rem
+		background-color: var(--white-color)
+		border-radius: var(--br-small)
+	&__list 
+		display: flex
+		column-gap: 4.8rem 
+	&__link 
+		display: inline-block
+		white-space: nowrap
+		transition: color .3s ease, transform .3s ease
+		&:hover 
+			color: var(--accent-color)
+			transform: scale(1.1)
+	&__link_phone 
+		padding-left: 3rem 
+		background: left / contain no-repeat
+	&__actions 
+		display: flex
+		justify-content: flex-end
+		column-gap: 1.2rem
+		max-width: 34rem 
+		width: 100%
+	&__btn 
+		max-height: 5.6rem
+		min-width: 4rem
+		min-height: 4rem
+		max-height: 5.6rem
+		display: inline-flex 
+		justify-content: center 
+		align-items: center
+		column-gap: 5px
+		border: 1px solid #D2D2D7
+		border-radius: var(--br-small)
+		padding: 1.4rem
+		transition: background-color .3s ease, transform .3s ease
+		&:hover 
+			background-color: var(--accent-color)
+			transform: scale(1.1)
+			svg 
+				color: var(--white-color)
+	&__icon 
+		display: inline-block
+		width: 20px 
+		height: 20px
+		background: center/contain no-repeat
+		transition: color .3s ease, transform .3s ease
+		color: #686870
+
+
+.category
+	&__nav 
+	&__list 
+		display: flex
+		align-items: center
+		column-gap: 5rem 
+	&__item 
+		text-align: center
+		:global(a.active) 
+			color: var(--accent-color)
+		&:first-child :global(a.active) .category__icon
+			background-image: url('../../assets/icons/category-nav/role-active.svg') !important
+		&:nth-child(2) :global(a.active) .category__icon
+			background-image: url('../../assets/icons/category-nav/sushi-active.svg') !important
+		&:nth-child(3) :global(a.active) .category__icon
+			background-image: url('../../assets/icons/category-nav/sets-active.svg') !important
+		&:nth-child(4) :global(a.active) .category__icon
+			background-image: url('../../assets/icons/category-nav/boules-active.svg') !important
+		&:nth-child(5) :global(a.active) .category__icon
+			background-image: url('../../assets/icons/category-nav/drink-active.svg') !important
+		&:nth-child(6) :global(a.active) .category__icon
+			background-image: url('../../assets/icons/category-nav/sauce-active.svg') !important
+		&:first-child:hover 
+			& .category__icon 
+				background-image: url('../../assets/icons/category-nav/role-active.svg') !important
+		&:nth-child(2):hover 
+			& .category__icon 
+				background-image: url('../../assets/icons/category-nav/sushi-active.svg') !important
+		&:nth-child(3):hover 
+			& .category__icon 
+				background-image: url('../../assets/icons/category-nav/sets-active.svg') !important
+		&:nth-child(4):hover 
+			& .category__icon 
+				background-image: url('../../assets/icons/category-nav/boules-active.svg') !important
+		&:nth-child(5):hover 
+			& .category__icon 
+				background-image: url('../../assets/icons/category-nav/drink-active.svg') !important
+		&:nth-child(6):hover 
+			& .category__icon 
+				background-image: url('../../assets/icons/category-nav/sauce-active.svg') !important
+	&__link 
+		display: inline-block 
+		transition: transform .3s ease, color .3s ease
+		&:hover 
+			transform: scale(1.1)
+			color: var(--accent-color)
+			.category__icon
+				transform: scale(1.1)
+		
+	&__icon 
+		display: block
+		width: 30px 
+		height: 30px
+		margin: 0 auto
+		background: center / cover no-repeat
+		transition: transform .3s ease, background .3s ease
+		color: #9E9E9E
+	
+		
+
+
+.header .header__top .header__list :global(a.active)
+			color: var(--accent-color)
+
+
+	
+
