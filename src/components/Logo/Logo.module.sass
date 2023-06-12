@@ -1,22 +1,38 @@
+@use '../../styles/absctract/_mixins'
+
 .logo
-	max-width: 21rem 
+	position: relative
+	max-width: 18rem
 	width: 100%
 	display: flex 
 	align-items: center
 	column-gap: 5px 
+	transition: transform .3s ease
+	&:hover 
+		transform: scale(1.1)
+	&__link 
+		position: absolute 
+		left: 0 
+		top: 0 
+		width: 100% 
+		height: 100%
 	&__right 
 		display: flex
 		align-items: center 
 		gap: 5px
+		@include mixins.respond('phone')
+			flex-direction: column
+			align-items: start
+			justify-content: start
 	&__img 
 		min-width: 25px
 		max-width: 41px
 	&__frame 
 		max-width: 78px
 		min-width: 35px
-		&:first-child
-			max-height: 40px
-			min-height: 20px
-		&:last-child
-			max-height: 27px 
-			min-height: 20px
+		&:first-child 
+			@include mixins.respond('phone')
+				max-width: 30px
+		&:last-child 
+			@include mixins.respond('phone')
+				max-width: 20px

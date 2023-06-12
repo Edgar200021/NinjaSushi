@@ -1,3 +1,5 @@
+import { NavLink } from 'react-router-dom'
+
 import logo from '../../assets/icons/logo.svg'
 import logoFrame1 from '../../assets/icons/logo-frame-1.svg'
 import logoFrame2 from '../../assets/icons/logo-frame-2.svg'
@@ -7,6 +9,7 @@ import styles from './Logo.module.sass'
 const Logo = () => {
 	return (
 		<div className={styles.logo}>
+		<NavLink to='/' className={styles.logo__link}></NavLink>
 			<div className={styles.logo__left}>
 				<img className={styles.logo__img} src={logo} alt="Логотип" />
 			</div>

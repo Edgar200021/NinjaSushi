@@ -1,2 +1,121 @@
+@use '../../styles/absctract/_mixins'
+	
 .footer 
-	grid-column: center-start / center-end
+	//display: grid 
+	//grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(8, minmax(min-content, 19rem)) 
+	grid-column: full-start / full-end
+	background-color: var(--white-color)
+	padding: 5.3rem 0 6.4rem
+	&__inner 
+		max-width: 157rem 
+		margin: 0 auto
+		padding: 0 2.5rem
+		display: flex
+		flex-wrap: wrap
+		gap: 3rem 8rem
+		@include mixins.respond('mini-tablet')
+			display: grid 
+			grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr))
+			gap: 2rem 4rem
+		@include mixins.respond('mini-phone')
+			grid-template-columns: repeat(2, 1fr)
+			gap: 2rem 0
+	&__copyright 
+		width: 24rem
+		margin-right: 3rem
+		@include mixins.font(1.4rem, 2rem, 500)
+		@include mixins.respond('mini-tablet') 
+			text-align: center
+			grid-column: 1 / -1
+			justify-self: center
+			margin-right: 0
+			margin-bottom: 5rem
+		& div:first-child 
+			margin-bottom: 2.4rem
+			@include mixins.respond('mini-tablet') 
+				max-width: 100% 
+				justify-content: center
+		&_links 
+			display: flex
+			column-gap: 14px
+			margin-bottom: 17px
+		&_link 
+			transition: transform .3s ease
+			&:hover
+				transform: translateY(-5px)
+			&:active 
+				transform: translateY(-2px)
+		&_img 
+			max-width: 108px
+			height: 35px
+		&_descr 
+			display: block
+			color: #9E9E9E	
+			margin-bottom: 7rem
+			@include mixins.respond('mini-tablet')
+				margin-bottom: 2rem
+	&__list
+		&_box:nth-child(5)
+			margin-right: 3rem
+		&_descr 
+			display: block
+			@include mixins.font(1.4rem, 2rem)
+			color: #686870
+			margin-bottom: 1.2rem
+		&_item:not(:last-child) 
+			margin-bottom: .8rem
+		&_link
+			display: block
+			transition: transform .3s ease 
+			&:hover
+				transform: scale(1.1)
+		&_text 
+			@include mixins.font(1.6rem, 2.4rem, 500)
+			color: #9E9E9E
+		&_flex 
+			display: flex
+			gap: 1.2rem
+			margin-bottom: 1.8rem
+		&_icon 
+			max-width: 26px 
+			max-height: 26px
+	&__telegram
+		&_link 
+			max-width: 17rem
+			display: flex 
+			justify-content: center 
+			align-items: center
+			gap: 1.2rem 
+			padding: 1.4rem 1.2rem
+			color: #039BE5
+			background-color: var(--bg-color)
+			border-radius: var(--br-small)
+			transition: transform .3s ease
+			&:hover
+				transform: translateY(-5px)
+			&:active 
+				transform: translateY(-2px)
+		&_icon 
+			width: 20px 
+			height: 16px
+	&__terms 
+		@include mixins.respond('mini-tablet') 
+			grid-column: 1 / -1
+			justify-self: center
+			padding-top: 5rem
+		&_descr 
+			display: block
+			@include mixins.font(1.4rem, 2rem, 500)
+			margin-bottom: 1.6rem
+			color:  #686870
+		&_list 
+			display: flex 
+			align-items: center
+			gap: 2.7rem
+			margin-bottom: 2.5rem
+		&_img 
+			max-width: 50px
+		&_text
+			@include mixins.font(1.4rem, 2rem, 500)
+			color: #9E9E9E	
+			

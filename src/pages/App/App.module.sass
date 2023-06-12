@@ -1,5 +1,12 @@
+@use '../../styles/absctract/_mixins'
+
 .app 
+	width: 100%
 	height: 100%
 	display: grid 
-	grid-template-columns: [full-start] minmax(5rem, 1fr) [center-start] repeat(8, minmax(min-content, 19rem)) [center-end] minmax(5rem, 1fr)
+	grid-template-columns: [full-start] minmax(2.5rem, 1fr) [center-start] repeat(8, minmax(min-content, 19rem)) [center-end] minmax(2.5rem, 1fr)
 	grid-template-rows: min-content 1fr min-content
+	@include mixins.respond('mini-phone')
+		grid-template-columns: [full-start] minmax(1.5rem, 1fr) [center-start] repeat(8, minmax(min-content, 19rem)) [center-end] minmax(1.5rem, 1fr)
+
+	
