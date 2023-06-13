@@ -10,21 +10,19 @@
 		max-width: 157rem 
 		margin: 0 auto
 		padding: 0 2.5rem
-		display: flex
-		flex-wrap: wrap
+		display: grid 
+		grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr))
 		gap: 3rem 8rem
-		@include mixins.respond('mini-tablet')
-			display: grid 
-			grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr))
+		@include mixins.respond('tablet')
 			gap: 2rem 4rem
 		@include mixins.respond('mini-phone')
 			grid-template-columns: repeat(2, 1fr)
-			gap: 2rem 0
+			gap: 2rem 1.5rem
 	&__copyright 
 		width: 24rem
 		margin-right: 3rem
 		@include mixins.font(1.4rem, 2rem, 500)
-		@include mixins.respond('mini-tablet') 
+		@include mixins.respond('tablet') 
 			text-align: center
 			grid-column: 1 / -1
 			justify-self: center
@@ -32,7 +30,7 @@
 			margin-bottom: 5rem
 		& div:first-child 
 			margin-bottom: 2.4rem
-			@include mixins.respond('mini-tablet') 
+			@include mixins.respond('tablet') 
 				max-width: 100% 
 				justify-content: center
 		&_links 
@@ -57,6 +55,8 @@
 	&__list
 		&_box:nth-child(5)
 			margin-right: 3rem
+			@include mixins.respond('mini-phone')
+				margin-right: 0
 		&_descr 
 			display: block
 			@include mixins.font(1.4rem, 2rem)
@@ -72,6 +72,7 @@
 		&_text 
 			@include mixins.font(1.6rem, 2.4rem, 500)
 			color: #9E9E9E
+			white-space: nowrap
 		&_flex 
 			display: flex
 			gap: 1.2rem
@@ -81,7 +82,8 @@
 			max-height: 26px
 	&__telegram
 		&_link 
-			max-width: 17rem
+			min-width: 17rem
+			max-width: 18rem
 			display: flex 
 			justify-content: center 
 			align-items: center
@@ -99,7 +101,7 @@
 			width: 20px 
 			height: 16px
 	&__terms 
-		@include mixins.respond('mini-tablet') 
+		@include mixins.respond('tablet') 
 			grid-column: 1 / -1
 			justify-self: center
 			padding-top: 5rem

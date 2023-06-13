@@ -1,0 +1,62 @@
+@use '../../styles/absctract/_mixins'
+	
+.banner
+	display: flex
+	align-items: center
+	justify-content: space-between
+	background-color: var(--white-color)
+	border-radius: var(--br-small)
+	margin-bottom: 12rem
+	@include mixins.respond('mini-tablet')
+		flex-direction: column
+		row-gap: 2rem
+	&__section 
+		margin-bottom: 12.4rem
+		grid-column: center-start / center-end
+	&__left 
+		max-width: 72rem
+		width: 100%
+		padding: 5rem 0
+		padding-left: 9rem 
+		padding-right: 7rem
+		@include mixins.respond('big-tablet')
+			padding: 4rem 0 
+			padding-left: 9rem 
+			padding-right: 7rem
+		@include mixins.respond('tablet')
+			padding: 2.5rem 
+			padding-left: 6rem 
+			padding-right: 4rem
+		@include mixins.respond('mini-tablet')
+			order: 1
+			padding: 0 1.2rem 1.2rem 1.2rem
+		button 
+			max-width: 31rem
+			@include mixins.respond('mini-phone') 
+				max-width: 100%
+	&__right 
+		max-width: 70rem 
+		width: 100%
+		
+	&__title 
+		margin-bottom: 1.6rem
+		@include mixins.font(6.4rem, 8.2rem, 700)
+		@include mixins.respond('desktop')
+			@include mixins.font(5.4rem, 6rem, 700)
+		@include mixins.respond('big-tablet')
+			@include mixins.font(4.5rem, 5rem, 700)
+		@include mixins.respond('tablet')
+			@include mixins.font(3.5rem, 4rem, 700)	
+		@include mixins.respond('mini-phone')
+			@include mixins.font(3rem, 3rem, 700)	
+		
+	&__descr 
+		display: block
+		margin-bottom: 2.4rem
+		@include mixins.font(2rem, 2.8rem)
+		color: #686870
+		@include mixins.respond('mini-phone') 
+			@include mixins.font(1.6rem, 2rem)
+	&__img 
+		border-radius: var(--br-small)
+		object-fit: cover

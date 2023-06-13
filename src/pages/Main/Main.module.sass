@@ -1,0 +1,29 @@
+@use '../../styles/absctract/_mixins'
+	
+.main 
+	display: grid 
+	grid-column: full-start / full-end
+	display: grid 
+	grid-template-columns: [full-start] minmax(2.5rem, 1fr) [center-start] repeat(8, minmax(min-content, 19rem)) [center-end] minmax(2.5rem, 1fr)
+	grid-template-rows: repeat(4, min-content) 40vw repeat(2, min-content) 40vw min-content
+
+.section 
+	grid-column: center-start / center-end
+	button
+		@include mixins.button(var(--green-color), var(--white-color), var(--white-color), var(--white-color))
+	&__info 
+		display: flex 
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 3.2rem
+		@include mixins.respond('mini-phone')
+			justify-content: center
+		a 
+			max-width: 160px
+			@include mixins.respond('mini-phone')
+				display: none
+	&__sublink 
+		display: none 
+		@include mixins.respond('mini-phone')
+			display: block
+			
