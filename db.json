@@ -1,0 +1,664 @@
+{
+  "products": [
+    {
+	  "id": 1,
+      "labels": ["hit", "new"],
+      "img": "./img/sushi/img-1.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Гункан лосось",
+      "weight": 40,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 190,
+	  "category": "sushi",
+	  "isOffer": false
+    },
+    {
+	  "id": 2,
+      "labels": ["hit", "new"],
+      "img": "./img/sushi/img-2.png",
+      "filters": ["chili", "vegan"],
+      "title": "Гункан креветка",
+      "weight": 60,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик"
+      ],
+      "price": 220,
+	  "category": "sushi",
+	  "isOffer": false
+    },
+    {
+	  "id": 3,
+      "labels": ["hit"],
+      "img": "./img/sushi/img-3.png",
+      "filters": ["chili", "lactose"],
+      "title": "Нигири угорь",
+      "weight": 30,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "sushi",
+	  "isOffer": false
+    },
+    {
+	  "id": 4,
+      "labels": ["new"],
+      "img": "./img/sushi/img-4.png",
+      "filters": [ "vegan", "lactose"],
+      "title": "Нигири угорь",
+      "weight": 80,
+      "ingridients": [
+        "Нори",
+        "рис"
+      ],
+      "price": 300,
+	  "category": "sushi",
+	  "isOffer": false
+    },
+    {
+	  "id": 5,
+      "labels": [],
+      "img": "./img/sushi/img-5.png",
+      "filters": ["lactose"],
+      "title": "Гункан с тунцом и трюфелем",
+      "weight": 100,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 280,
+	  "category": "sushi",
+	  "isOffer": false
+    },
+    {
+	  "id":6,
+      "labels": ["hit", "new"],
+      "img": "./img/sushi/img-6.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Гункан тунец спайси",
+      "weight": 120,
+      "ingridients": [
+        "Нори",
+        "рис"
+      ],
+      "price": 140,
+	  "category": "sushi",
+	  "isOffer": false
+    },
+    {
+	  "id": 7,
+      "labels": ["hit", "new"],
+      "img": "./img/sushi/img-7.png",
+      "filters": ["chili"],
+      "title": "Гункан угорь",
+      "weight": 130,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 300,
+	  "category": "sushi",
+	  "isOffer": false
+    },
+    {
+	  "id": 8,
+      "labels": ["hit", "new"],
+      "img": "./img/sushi/img-8.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Нигири тунец",
+      "weight": 70,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "sushi",
+	  "isOffer": false
+    },
+    {
+	  "id": 9,
+      "labels": ["hit", "new"],
+      "img": "./img/roles/img-1.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Филадельфия с лососем",
+      "weight": 40,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 190,
+	  "category": "roles",
+	  "isOffer": true
+    },
+    {
+	  "id": 10,
+      "labels": ["hit", "new"],
+      "img": "./img/roles/img-2.png",
+      "filters": ["chili", "vegan"],
+      "title": "Филадельфия с угрем",
+      "weight": 320,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик"
+      ],
+      "price": 220,
+	  "category": "roles",
+	  "isOffer": false
+    },
+    {
+	  "id": 11,
+      "labels": ["hit"],
+      "img": "./img/roles/img-3.png",
+      "filters": ["chili", "lactose"],
+      "title": "Кратос",
+      "weight": 320,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "roles",
+	  "isOffer": false
+    },
+    {
+	  "id": 12,
+      "labels": ["new"],
+      "img": "./img/roles/img-4.png",
+      "filters": [ "vegan", "lactose"],
+      "title": "Ямамото",
+      "weight": 310,
+      "ingridients": [
+        "Нори",
+        "рис"
+      ],
+      "price": 300,
+	  "category": "roles",
+	  "isOffer": false
+    },
+    {
+	  "id": 13,
+      "labels": [],
+      "img": "./img/roles/img-5.png",
+      "filters": ["lactose"],
+      "title": "Запеченная креветка",
+      "weight": 330,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 280,
+	  "category": "roles",
+	  "isOffer": false
+    },
+    {
+	  "id": 14,
+      "labels": ["hit", "new"],
+      "img": "./img/roles/img-6.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Сырный с лососем",
+      "weight": 350,
+      "ingridients": [
+        "Нори",
+        "рис"
+      ],
+      "price": 140,
+	  "category": "roles",
+	  "isOffer": false
+    },
+    {
+	  "id": 15,
+      "labels": ["hit", "new"],
+      "img": "./img/roles/img-7.png",
+      "filters": ["chili"],
+      "title": "Микаса",
+      "weight": 235,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 300,
+	  "category": "roles",
+	  "isOffer": false
+    },
+    {
+	  "id": 16,
+      "labels": ["hit", "new"],
+      "img": "./img/roles/img-1.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Комбо Филадельфия",
+      "weight": 325,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "roles",
+	  "isOffer": false
+    },
+    {
+	  "id": 17,
+      "labels": ["hit", "new"],
+      "img": "./img/sets/img-1.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Сет #1",
+      "weight": 950,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "sets",
+	  "isOffer": true
+    },
+    {
+	  "id": 18,
+      "labels": ["hit", "new"],
+      "img": "./img/sets/img-2.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Сет #2",
+      "weight": 895,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "sets",
+	  "isOffer": false
+    },
+    {
+	  "id": 19,
+      "labels": ["hit", "new"],
+      "img": "./img/sets/img-3.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Сет #3",
+      "weight": 900,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "sets",
+	  "isOffer": false
+    },
+    {
+	  "id": 20,
+      "labels": ["hit", "new"],
+      "img": "./img/sets/img-4.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Сет Осака",
+      "weight": 252,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "sets",
+	  "isOffer": false
+    },
+    {
+	  "id": 21,
+      "labels": ["hit", "new"],
+      "img": "./img/sets/img-5.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Суши лосось в нори",
+      "weight": 1600,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "sets",
+	  "isOffer": false
+    },
+    {
+	  "id": 22,
+      "labels": ["hit", "new"],
+      "img": "./img/sets/img-6.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Сет #7",
+      "weight": 1400,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "sets",
+	  "isOffer": false
+    },
+    {
+	  "id": 23,
+      "labels": ["hit", "new"],
+      "img": "./img/sets/img-7.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Сет #7",
+      "weight": 1350,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "sets",
+	  "isOffer": false
+    },
+    {
+	  "id": 24,
+      "labels": ["hit", "new"],
+      "img": "./img/sets/img-8.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Гункан Сет",
+      "weight": 1400,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "sets",
+	  "isOffer": true
+    },
+    {
+	  "id": 25,
+      "labels": ["hit", "new"],
+      "img": "./img/snacks/img-1.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Тартар из лосося с халапеньо",
+      "weight": 180,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "snacks",
+	  "isOffer": false
+    },
+    {
+	  "id": 26,
+      "labels": ["hit", "new"],
+      "img": "./img/snacks/img-2.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Тартар из лосося с авокадо",
+      "weight": 180,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "snacks",
+	  "isOffer": true
+    },
+    {
+	  "id": 27,
+      "labels": ["hit", "new"],
+      "img": "./img/snacks/img-3.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Салат Чука-Вакаме",
+      "weight": 185,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "snacks",
+	  "isOffer": false
+    },
+    {
+	  "id": 28,
+      "labels": ["hit", "new"],
+      "img": "./img/snacks/img-4.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Салат с киноа, авокадо и курицей",
+      "weight": 252,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "snacks",
+	  "isOffer": false
+    },
+    {
+	  "id": 29,
+      "labels": ["hit", "new"],
+      "img": "./img/snacks/img-5.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Инари с тунцом и трюфелем",
+      "weight": 60,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "snacks",
+	  "isOffer": true
+    },
+    {
+	  "id": 30,
+      "labels": ["hit", "new"],
+      "img": "./img/snacks/img-6.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Инари с морским гребешком и сыром",
+      "weight": 60,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "snacks",
+	  "isOffer": false
+    },
+    {
+	  "id": 31,
+      "labels": ["hit", "new"],
+      "img": "./img/snacks/img-7.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Инари с лососем и авокадо",
+      "weight": 69,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "snacks",
+	  "isOffer": false
+    },
+    {
+	  "id": 32,
+      "labels": ["hit", "new"],
+      "img": "./img/snacks/img-8.png",
+      "filters": ["chili", "vegan", "lactose"],
+      "title": "Тартар микс",
+      "weight": 225,
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик",
+        "трюфельная сальса",
+        "кунжутное масло"
+      ],
+      "price": 120,
+	  "category": "snacks",
+	  "isOffer": false
+    },
+    {
+	  "id": 33,
+      "img": "./img/drinks/img-1.png",
+      "title": "Coca-Cola 0.25(ст)",
+      "volume": 0.25,
+      "price": 190,
+	  "category": "drinks",
+	  "isOffer": false
+    },
+    {
+	  "id": 34,
+      "img": "./img/drinks/img-2.png",
+      "title": "Fanta",
+      "volume": 0.5,
+      "price": 150,
+	  "category": "drinks",
+	  "isOffer": false
+    },
+    {
+	  "id": 35,
+      "img": "./img/drinks/img-3.png",
+      "title": "Моршинская негаз.",
+	  "volume": 0.5,
+      "price": 90,
+	  "category": "drinks",
+	  "isOffer": false
+    },
+    {
+	  "id": 36,
+      "img": "./img/drinks/img-4.png",
+      "title": "Берн",
+      "volume": 0.5,
+      "price": 120,
+	  "category": "drinks",
+	  "isOffer": false
+    },
+    {
+	  "id": 37,
+      "img": "./img/drinks/img-5.png",
+      "title": "Coca-Cola Vanilla",
+      "volume": 1,
+      "price": 60,
+	  "category": "drinks",
+	  "isOffer": false
+    },
+    {
+	  "id": 38,
+      "img": "./img/drinks/img-6.png",
+      "title": "Dr Pepper вишня",
+      "volume": 30,
+      "price": 40,
+	  "category": "drinks",
+	  "isOffer": false
+    },
+    {
+	  "id": 39,
+      "img": "./img/drinks/img-7.png",
+      "title": "Dr Pepper классический",
+      "volume": 0.330,
+      "price": 100,
+	  "category": "drinks",
+	  "isOffer": false
+    },
+    {
+	  "id": 40,
+	  "img": "./img/drinks/img-8.png",
+      "title": "Sprite",
+      "volume": 0.5,
+      "price": 120,
+	  "category": "drinks",
+	  "isOffer": false
+    }
+  ]
+}

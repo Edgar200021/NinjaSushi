@@ -5,6 +5,8 @@
 	padding-top: 16px
 	margin-bottom: var(--spacing-medium)
 	width: 100%
+	@include mixins.respond('mini-phone')
+		margin-bottom: 2rem
 	&__top 
 		display: flex 
 		flex-wrap: wrap

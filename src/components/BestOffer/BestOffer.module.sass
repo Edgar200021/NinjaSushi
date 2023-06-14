@@ -1,0 +1,59 @@
+@use '../../styles/absctract/_mixins'
+.bestoffer
+	position: relative
+	grid-column: center-start / center-end
+	max-width: 95vw 
+	margin: 0 auto
+	padding-bottom: 5rem
+	@include mixins.respond('mini-tablet')
+		max-width: 85vw
+	&__slider
+		display: flex
+		padding-top: 18rem
+		overflow-x: hidden
+		@include mixins.respond('tablet')
+			padding-top: 12rem
+		@include mixins.respond('mini-tablet')
+			padding-top: 10rem
+	&__slide 
+		min-width: 100%
+		transition: transform .5s ease
+	&__btn 
+		position: absolute
+		width: 50px 
+		height: 130px 
+		top: 50% 
+		transform: translateY(-50%)
+		background: rgba(39, 39, 39, 0.05)
+		border-radius: 12px
+		@include mixins.respond('tablet')
+			width: 40px 
+			height: 90px
+		@include mixins.respond('mini-phone')
+			width: 30px 
+			height: 60px
+		&::before 
+			content: ''
+			position: absolute 
+			left: 50% 
+			top: 50%
+			transform: translate(-50%, -50%)
+			width: 14px 
+			height: 20px
+			
+		&_left
+			left: -25px
+			&::before 
+				background: url('../../assets/icons/arrow-left.svg') center/cover no-repeat		
+			@include mixins.respond('big-tablet')
+				left: -20px
+			@include mixins.respond('tablet')
+				left: -13px
+		&_right 
+			right: -25px
+			&::before 
+				background: url('../../assets/icons/arrow-right.svg') center/cover no-repeat
+			@include mixins.respond('big-tablet')
+				right: -20px
+			@include mixins.respond('tablet')
+				right: -13px

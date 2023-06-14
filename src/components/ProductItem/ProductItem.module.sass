@@ -36,6 +36,7 @@
 		border-radius: 8px
 		color: var(--accent-color)
 		background-color: var(--pink-color)
+		text-transform: capitalize
 		&:nth-child(even) 
 			color: var(--green-color)
 			background-color: var(--light-green-color)
@@ -58,6 +59,8 @@
 	&__img 
 		transition: transform .3s ease
 		max-width: 34rem
+		@include mixins.respond('mini-tablet')
+			max-width: 30rem
 	&__filters 
 		display: flex 
 		align-items: center
@@ -72,6 +75,7 @@
 			width: 22px 
 			height: 22px
 	&__info 
+		margin-bottom: 2rem
 		@include mixins.respond('mini-phone')
 			grid-column: 2 / 4
 	&__title 

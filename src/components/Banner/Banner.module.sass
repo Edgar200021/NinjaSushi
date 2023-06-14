@@ -6,13 +6,16 @@
 	justify-content: space-between
 	background-color: var(--white-color)
 	border-radius: var(--br-small)
-	margin-bottom: 12rem
 	@include mixins.respond('mini-tablet')
 		flex-direction: column
 		row-gap: 2rem
+	@include mixins.respond('mini-phone')
+		margin: auto
 	&__section 
 		margin-bottom: 12.4rem
 		grid-column: center-start / center-end
+		@include mixins.respond('mini-phone')
+			margin-bottom: 0
 	&__left 
 		max-width: 72rem
 		width: 100%
@@ -60,3 +63,5 @@
 	&__img 
 		border-radius: var(--br-small)
 		object-fit: cover
+		@include mixins.respond('mini-phone') 
+			height: 40rem

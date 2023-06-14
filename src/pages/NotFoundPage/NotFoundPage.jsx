@@ -1,11 +1,11 @@
-import NotFound from '../../components/NotFound'
+import Notification from '../../components/Notification/Notification'
 
 import styles from './NotFoundPage.module.sass'
 
 const NotFoundPage = () => {
   return (
 	<main className={styles.notfound__main}>
-		<NotFound/>
+		<Notification type="notFound"/>
 	</main>
   )
 }

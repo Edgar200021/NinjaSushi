@@ -1,0 +1,66 @@
+@use '../../styles/absctract/_mixins'
+	
+.map	
+	min-width: 98vw
+	div
+		width: 98vw !important
+		height: 50rem !important
+		margin: 0 auto
+	&__container 
+		grid-column: full-start / full-end
+		text-align: center
+		margin-bottom: 10rem
+	&__title 
+		max-width: 120rem 
+		margin: 0 auto
+		margin-bottom: 5rem
+		@include mixins.respond('phone')
+			max-width: 50rem
+
+	&__labels 
+		margin-bottom: 1.6rem
+	&__label 
+		@include mixins.font(2rem, 2.8rem, 400)
+		position: relative
+		padding-left: 7.4rem
+		@include mixins.respond('mini-tablet')
+			max-width: 30rem
+			display: block
+			margin: 0 auto
+		&::before 
+			content: ''
+			width: 30px 
+			height: 30px
+			position: absolute 
+			left: 0 
+			top: 50% 
+			transform: translateY(-50%)
+			border: 1px solid #7CB342
+			border-radius: 500px
+		&::after 
+			content: ''
+			width: 20px
+			height: 2px
+			position: absolute
+			left: 42px 
+			top: 50%
+			transform: translateY(-50%)
+			background-color: var(--black-color)
+		&:not(:last-child)
+			margin-right: 3rem
+			@include mixins.respond('mini-tablet')
+				margin: 0 auto
+				margin-bottom: 1.5rem
+			 
+		&:first-child 
+			&::before
+				background: rgba(124, 179, 66, 0.24)
+		&:nth-child(2)
+			&::before 
+				background: rgba(251, 192, 45, 0.24)
+		&:last-child 
+			&::before 
+				background: rgba(255, 82, 82, 0.24)
+	
+				
+			

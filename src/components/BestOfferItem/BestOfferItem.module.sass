@@ -1,0 +1,87 @@
+@use '../../styles/absctract/_mixins'
+.bestofferitem
+	position: relative 
+	display: flex
+	align-items: center
+	padding: 0 8rem
+	background-color: var(--white-color)
+	border-radius: var(--br-medium)
+	@include mixins.respond('big-tablet')
+		padding: 0 6rem
+	@include mixins.respond('tablet')
+		padding: 3rem 6rem
+		gap: 2rem
+	@include mixins.respond('mini-tablet')
+		flex-direction: column
+		padding: 0 3rem
+		padding-bottom: 7rem
+		gap: 0
+		align-items: start
+	@include mixins.respond('phone')
+		padding: 0 2rem
+		padding-bottom: 10rem
+	&__info 
+		max-width: 48rem
+		@include mixins.respond('mini-tablet')
+			order: 2
+			max-width: 60rem
+	&__title 
+		@include mixins.font(5.4rem, 5.6rem, 700)
+		margin-bottom: 1.6rem 
+		@include mixins.respond('tablet')
+			@include mixins.font(4rem, 5rem, 700)
+		@include mixins.respond('phone')
+			@include mixins.font(3rem, 4rem, 700)
+	&__ingridients 
+		display: flex
+		flex-wrap: wrap
+		max-width: 35rem 
+		margin-bottom: 3.4rem
+		column-gap: 5px
+	&__ingridient 
+		@include mixins.font(2rem, 2.8rem, 400)
+	&__action 
+		display: flex 
+		align-items: center
+		column-gap: 2.5rem
+		width: 100%
+		button 
+			max-width: 15rem
+			@include mixins.button(var(--green-color), #F5F5F7, #F5F5F7, #F5F5F7)
+	&__price 
+		@include mixins.font(4rem, 3.2rem, 700)
+	&__currency 
+		@include mixins.font(1.7rem, 2.5rem, 500)
+		color: #686870
+	&__offer 
+		position: absolute
+		right: 0px
+		bottom: 0
+		display: flex 
+		justify-content: center 
+		align-items: center
+		max-width: 450px 
+		width: 100%
+		padding: 2.4rem 4.6rem
+		background-color: var(--accent-color)
+		color: var(--white-color)
+		border-top-left-radius: 100px
+		border-bottom-right-radius: 30px
+		@include mixins.font(1.6rem, 2.4rem, 700)
+		@include mixins.respond('tablet')
+			max-width: 300px
+		@include mixins.respond('mini-phone')
+			max-width: 220px
+			white-space: nowrap
+			@include mixins.font(1.3rem, 2rem, 700)
+	&__img
+		transform: translateY(-18rem)
+		object-fit: contain
+		@include mixins.respond('tablet')
+			transform: translateY(-14rem)	
+		@include mixins.respond('mini-tablet')
+			transform: translateY(-11rem)
+		&_box 
+			@include mixins.respond('mini-tablet')
+				max-width: 40rem
+				height: 15rem

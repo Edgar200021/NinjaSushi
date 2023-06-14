@@ -4,20 +4,30 @@ import { NavLink } from 'react-router-dom'
 
 import Button from '../Button'
 
-import styles from './ProductItem.module.sass'
-
-import img from '../../assets/img/sushi.png'
 import chili from '../../assets/icons/chili.svg'
 import vegan from '../../assets/icons/vegan.svg'
 import lactose from '../../assets/icons/lactose.svg'
 
-const ProductItem = () => {
+import styles from './ProductItem.module.sass'
+
+const ProductItem = ({
+  labels,
+  img,
+  filters,
+  title,
+  weight,
+  ingridients,
+  price,
+  volume,
+}) => {
   return (
     <li className={styles.product}>
       <ul className={styles.product__labels}>
-        <li className={styles.product__label}>Hit</li>
-        <li className={styles.product__label}>Hit</li>
-        <li className={styles.product__label}>Hit</li>
+        {labels?.map((label) => (
+          <li key={label} className={styles.product__label}>
+            {label}
+          </li>
+        ))}
       </ul>
       <div className={styles.product__img_box}>
         <NavLink to="/2123">
@@ -25,34 +35,44 @@ const ProductItem = () => {
         </NavLink>
       </div>
       <ul className={styles.product__filters}>
-        <li className={styles.product__filter}>
-          <img src={chili} alt="Чили" />
-        </li>
-        <li className={styles.product__filter}>
-          <img src={vegan} alt="Веган" />
-        </li>
-        <li className={styles.product__filter}>
-          <img src={lactose} alt="Лактоза" />
-        </li>
+        {filters?.map((filter) => {
+          const img =
+            filter === 'chili' ? chili : filter === 'vegan' ? vegan : lactose
+
+          return (
+            <li key={filter} className={styles.product__filter}>
+              <img src={img} alt={filter} />
+            </li>
+          )
+        })}
       </ul>
       <div className={styles.product__info}>
-        <h3 className={cn(styles.product__title, 'third-title')}>
-          Гункан лосось
-        </h3>
-        <span className={styles.product__weight}>Вес: 40г</span>
+        <h3 className={cn(styles.product__title, 'third-title')}>{title}</h3>
+        <span className={styles.product__weight}>
+          {weight ? 'Вес' : 'Обьем'} {weight || volume} {weight ? 'г' : 'л'}
+        </span>
         <ul className={styles.product__ingridients}>
-          <li className={styles.product__ingridient}>Нори,</li>
-          <li className={styles.product__ingridient}>рис, </li>
-          <li className={styles.product__ingridient}> японский майонез,</li>
-          <li className={styles.product__ingridient}>бальзамик,</li>
-          <li className={styles.product__ingridient}>трюфельная сальса,</li>
-          <li className={styles.product__ingridient}>кунжутное масло</li>
+          {ingridients?.map((ingridient, i) => {
+            if (ingridient === ingridients.at(-1)) {
+              return (
+                <li key={ingridient} className={styles.product__ingridient}>
+                  {ingridient}
+                </li>
+              )
+            }
+            return (
+              <li
+                key={ingridient}
+                className={styles.product__ingridient}
+              >{`${ingridient},`}</li>
+            )
+          })}
         </ul>
       </div>
 
       <div className={styles.product__actions}>
         <div className={styles.product__price_box}>
-          <span className={styles.product__price}>190 </span>
+          <span className={styles.product__price}>{price} </span>
           <span className={styles.product__currency}>грн</span>
         </div>
 
@@ -62,7 +82,7 @@ const ProductItem = () => {
           </svg>
         </Button>
         <Button>
-          <svg className={styles.product__actions_icon} >
+          <svg className={styles.product__actions_icon}>
             <use xlinkHref="icons/sprite.svg#icon-plus" />
           </svg>
         </Button>
@@ -72,7 +92,13 @@ const ProductItem = () => {
 }
 
 ProductItem.propTypes = {
-  text: PropTypes.string,
+  labels: PropTypes.array,
+  img: PropTypes.string,
+  filters: PropTypes.array,
+  title: PropTypes.string,
+  weight: PropTypes.number,
+  ingridients: PropTypes.array,
+  price: PropTypes.number,
 }
 
 export default ProductItem

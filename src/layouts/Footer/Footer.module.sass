@@ -10,9 +10,12 @@
 		max-width: 157rem 
 		margin: 0 auto
 		padding: 0 2.5rem
-		display: grid 
-		grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr))
+		display: flex 
+		justify-content: center
 		gap: 3rem 8rem
+		@include mixins.respond('big-tablet')
+			display: grid 	
+			grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr))
 		@include mixins.respond('tablet')
 			gap: 2rem 4rem
 		@include mixins.respond('mini-phone')
