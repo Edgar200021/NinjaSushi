@@ -1,0 +1,61 @@
+@use '../../styles/absctract/_mixins'
+
+.basketitem 
+	position: relative
+	display: flex
+	align-items: center
+	gap: 10px
+	padding: 1.2rem 1.8rem 1.2rem 2.4rem
+	background-color: var(--grey-color)
+	border-radius: var(--br-small)
+	@include mixins.respond('mini-phone')
+		padding: .8rem 1.4rem .8rem 2rem
+	&__img 
+		max-width: 60px
+		@include mixins.respond('mini-phone')
+			max-width: 40px
+	&__title 
+		@include mixins.font(1.6rem, 2.4rem, 700)
+	&__weight 
+		@include mixins.font(1.4rem, 2rem, 500)
+		color: var(--accent-color)
+	&__action 
+		margin-left: auto
+		@include mixins.font(1.4rem, 2rem, 500)
+		@include mixins.respond('mini-phone')
+			@include mixins.font(1.2rem, 2rem, 500)
+	&__price
+		margin-right: 1.6rem
+
+	&__delete_btn
+		position: absolute 
+		left: -10px 
+		top: 50%
+		transform: translateY(-50%)
+		width: 25px 
+		height: 25px
+		background-color: var(--white-color)
+		border-radius: 8px
+		font-size: 20px
+		transition: all .3s ease
+		@include mixins.respond('mini-phone')
+			font-size: 15px
+		&:hover
+			background-color: var(--accent-color)
+			color: var(--white-color)
+			transform: translateY(-65%)
+	&__btn 
+		width: 32px 
+		height: 32px
+		display: inline-flex 
+		justify-content: center 
+		align-items: center
+		background-color: var(--white-color)
+		border-radius: 8px
+		@include mixins.respond('mini-phone')
+			width: 25px 
+			height: 25px
+		&:not(:last-child)
+			margin-right: 8px
+	&__quantity 
+		margin-right: 8px

@@ -5,6 +5,7 @@ import cn from 'classnames'
 
 import Logo from '../../components/Logo'
 import BurgerMenu from '../../components/BurgerMenu'
+import Basket from '../../components/Basket'
 
 import phone from '../../assets/icons/phone.svg'
 
@@ -19,17 +20,29 @@ import styles from './Header.module.sass'
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false)
+  const [openBasket, setOpenBasket] = useState(false)
+
+  const basketBtnStyle = openBasket
+    ? { color: 'white', backgroundColor: '#FF6633' }
+    : null
+  const basketIconSyle = openBasket ? { color: 'white' } : null
 
   const onClickMenu = () => {
     setOpenMenu(!openMenu)
-    
+  }
+
+  const onClickBasket = () => {
+    setOpenBasket(true)
+
+    setTimeout(() => {
+      document.body.style.overflow = 'hidden'
+    })
   }
 
   return (
     <header className={styles.header}>
       <div className={styles.header__top}>
         <Logo />
-
         <nav className={styles.header__nav}>
           <ul className={styles.header__list}>
             <li className={styles.header__item}>
@@ -63,7 +76,6 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-
         <div className={styles.header__actions}>
           <button className={styles.header__btn}>
             <svg className={styles.header__icon}>
@@ -80,14 +92,19 @@ const Header = () => {
               <use xlinkHref="icons/sprite.svg#icon-user" />
             </svg>
           </button>
-          <button className={styles.header__btn}>
+          <button
+            style={basketBtnStyle}
+            onClick={onClickBasket}
+            className={styles.header__btn}
+          >
             <span>Корзина</span>
-            <svg className={styles.header__icon}>
+            <svg style={basketIconSyle} className={styles.header__icon}>
               <use xlinkHref="icons/sprite.svg#icon-basket" />
             </svg>
           </button>
           <BurgerMenu openedMenu={openMenu} onClickMenu={onClickMenu} />
         </div>
+        <Basket openBasket={openBasket} onCloseBasket={setOpenBasket} />
       </div>
       <div className={styles.header__bottom}>
         <nav className={styles.category__nav}>

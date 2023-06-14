@@ -51,7 +51,7 @@ const BurgerMenu = ({ openedMenu, onClickMenu }) => {
           <h2 className={cn(styles.burger__title, 'second-title')}>Меню</h2>
           <ul className={styles.burger__list}>
             <li className={cn(styles.burger__item, styles.burger__item_nav)}>
-              <NavLink className={styles.burger__link}>
+              <NavLink onClick={closeModal} className={styles.burger__link}>
                 <span
                   style={{ backgroundImage: `url(${sushi})` }}
                   className={styles.burger__icon}
@@ -60,7 +60,7 @@ const BurgerMenu = ({ openedMenu, onClickMenu }) => {
               </NavLink>
             </li>
             <li className={cn(styles.burger__item, styles.burger__item_nav)}>
-              <NavLink className={styles.burger__link}>
+              <NavLink onClick={closeModal} className={styles.burger__link}>
                 <span
                   style={{ backgroundImage: `url(${roles})` }}
                   className={styles.burger__icon}
@@ -69,7 +69,7 @@ const BurgerMenu = ({ openedMenu, onClickMenu }) => {
               </NavLink>
             </li>
             <li className={cn(styles.burger__item, styles.burger__item_nav)}>
-              <NavLink className={styles.burger__link}>
+              <NavLink onClick={closeModal} className={styles.burger__link}>
                 <span
                   style={{ backgroundImage: `url(${sets})` }}
                   className={styles.burger__icon}
@@ -78,7 +78,7 @@ const BurgerMenu = ({ openedMenu, onClickMenu }) => {
               </NavLink>
             </li>
             <li className={cn(styles.burger__item, styles.burger__item_nav)}>
-              <NavLink className={styles.burger__link}>
+              <NavLink onClick={closeModal} className={styles.burger__link}>
                 <span
                   style={{ backgroundImage: `url(${bouls})` }}
                   className={styles.burger__icon}
@@ -87,7 +87,7 @@ const BurgerMenu = ({ openedMenu, onClickMenu }) => {
               </NavLink>
             </li>
             <li className={cn(styles.burger__item, styles.burger__item_nav)}>
-              <NavLink className={styles.burger__link}>
+              <NavLink onClick={closeModal} className={styles.burger__link}>
                 <span
                   style={{ backgroundImage: `url(${drink})` }}
                   className={styles.burger__icon}
@@ -96,17 +96,16 @@ const BurgerMenu = ({ openedMenu, onClickMenu }) => {
               </NavLink>
             </li>
             <li className={cn(styles.burger__item, styles.burger__item_nav)}>
-              <NavLink className={styles.burger__link}>
+              <NavLink onClick={closeModal} className={styles.burger__link}>
                 <span
                   style={{ backgroundImage: `url(${sauce})` }}
-                  sauce
                   className={styles.burger__icon}
                 ></span>
                 <span>Соусы</span>
               </NavLink>
             </li>
             <li className={cn(styles.burger__item, styles.burger__item_nav2)}>
-              <NavLink className={styles.burger__link}>
+              <NavLink onClick={closeModal} className={styles.burger__link}>
                 <svg className={styles.burger__icon_small}>
                   <use xlinkHref="icons/sprite.svg#icon-basket" />
                 </svg>
@@ -114,7 +113,7 @@ const BurgerMenu = ({ openedMenu, onClickMenu }) => {
               </NavLink>
             </li>
             <li className={cn(styles.burger__item, styles.burger__item_nav2)}>
-              <NavLink className={styles.burger__link}>
+              <NavLink onClick={closeModal} className={styles.burger__link}>
                 <svg className={styles.burger__icon_small}>
                   <use xlinkHref="icons/sprite.svg#icon-hearth" />
                 </svg>
@@ -122,7 +121,7 @@ const BurgerMenu = ({ openedMenu, onClickMenu }) => {
               </NavLink>
             </li>
             <li className={cn(styles.burger__item, styles.burger__item_nav2)}>
-              <NavLink className={styles.burger__link}>
+              <NavLink onClick={closeModal} className={styles.burger__link}>
                 <svg className={styles.burger__icon_small}>
                   <use xlinkHref="icons/sprite.svg#icon-user" />
                 </svg>
@@ -130,29 +129,31 @@ const BurgerMenu = ({ openedMenu, onClickMenu }) => {
               </NavLink>
             </li>
             <li className={cn(styles.burger__item, styles.burger__item_nav2)}>
-              <NavLink className={styles.burger__link}>
+              <NavLink onClick={closeModal} className={styles.burger__link}>
                 <span>Главная</span>
               </NavLink>
             </li>
             <li className={cn(styles.burger__item, styles.burger__item_nav2)}>
-              <NavLink className={styles.burger__link}>
+              <NavLink onClick={closeModal} className={styles.burger__link}>
                 <span>Доставка</span>
               </NavLink>
             </li>
-            <li className={cn(styles.burger__item, styles.burger__item_nav2)}>
-              <NavLink className={styles.burger__link}>
+            <li  className={cn(styles.burger__item, styles.burger__item_nav2)}>
+              <NavLink onClick={closeModal} className={styles.burger__link}>
                 <span>О нас</span>
               </NavLink>
             </li>
             <li className={cn(styles.burger__item, styles.burger__item_nav2)}>
-              <NavLink className={styles.burger__link}>
+              <NavLink onClick={closeModal} className={styles.burger__link}>
                 <span>Новости</span>
               </NavLink>
             </li>
             <li className={cn(styles.burger__item, styles.burger__item_blue)}>
               <a
+			  onClick={closeModal}
                 href="https://web.telegram.org/"
                 className={styles.burger__link}
+				target='_blank'
               >
                 <img
                   src={telegram}

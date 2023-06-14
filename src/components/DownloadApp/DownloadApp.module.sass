@@ -2,7 +2,9 @@
 	
 .downloadapp 
 	grid-column: center-start / center-end
-	margin-bottom: 10rem
+	margin-bottom: 2rem
+	@include mixins.respond('mini-phone')
+		margin-bottom: 8rem
 	&__inner 
 		position: relative
 		width: 100%

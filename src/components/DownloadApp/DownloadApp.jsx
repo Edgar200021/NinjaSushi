@@ -1,4 +1,3 @@
-import cn from 'classnames'
 import styles from './DownloadApp.module.sass'
 
 import appstore from '../../assets/icons/app-store.svg'

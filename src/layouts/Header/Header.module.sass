@@ -5,6 +5,7 @@
 	padding-top: 16px
 	margin-bottom: var(--spacing-medium)
 	width: 100%
+	z-index: 4
 	@include mixins.respond('mini-phone')
 		margin-bottom: 2rem
 	&__top 
@@ -74,6 +75,9 @@
 		border-radius: var(--br-small)
 		padding: 1.4rem
 		transition: background-color .3s ease, transform .3s ease, color .3s ease
+		&_active 
+			background-color: var(--accent-color)
+			color: var(--white-color)
 		@include mixins.respond('mini-tablet')
 			padding: 1rem
 			span 
