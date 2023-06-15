@@ -1,6 +1,10 @@
 import PropTypes from 'prop-types'
 import cn from 'classnames'
+
+import { useDispatch, useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom'
+
+import { addProduct } from '../../Store/basketSlice'
 
 import Button from '../Button'
 
@@ -11,6 +15,7 @@ import lactose from '../../assets/icons/lactose.svg'
 import styles from './ProductItem.module.sass'
 
 const ProductItem = ({
+  id,
   labels,
   img,
   filters,
@@ -20,10 +25,15 @@ const ProductItem = ({
   price,
   volume,
 }) => {
+  const dispatch = useDispatch(),
+    addBasketProduct = () => dispatch(addProduct({id, volume, img, title, weight, price}))
+
+	
+
   return (
     <li className={styles.product}>
       <ul className={styles.product__labels}>
-        {labels?.map((label) => (
+        {labels?.map(label => (
           <li key={label} className={styles.product__label}>
             {label}
           </li>
@@ -35,7 +45,7 @@ const ProductItem = ({
         </NavLink>
       </div>
       <ul className={styles.product__filters}>
-        {filters?.map((filter) => {
+        {filters?.map(filter => {
           const img =
             filter === 'chili' ? chili : filter === 'vegan' ? vegan : lactose
 
@@ -81,7 +91,7 @@ const ProductItem = ({
             <use xlinkHref="icons/sprite.svg#icon-hearth" />
           </svg>
         </Button>
-        <Button>
+        <Button onClick={addBasketProduct}>
           <svg className={styles.product__actions_icon}>
             <use xlinkHref="icons/sprite.svg#icon-plus" />
           </svg>
@@ -92,6 +102,7 @@ const ProductItem = ({
 }
 
 ProductItem.propTypes = {
+  id: PropTypes.number,
   labels: PropTypes.array,
   img: PropTypes.string,
   filters: PropTypes.array,

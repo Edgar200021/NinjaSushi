@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types'
 import styles from './Button.module.sass'
 
-const Button = ({text, children}) => {
+const Button = ({text, children, onClick = null}) => {
 	return (
-		<button  className={styles.button}>{text}
+		<button onClick={onClick} className={styles.button}>{text}
 			{children}
 		</button>
 	)
