@@ -36,7 +36,7 @@
 			padding: 1rem 1.5rem
 		@include mixins.respond('mini-phone')
 			background-color: transparent
-			max-width: 30rem
+			max-width: 41rem
 			padding: 0
 	&__nav 
 		@include mixins.respond('big-tablet')
@@ -64,6 +64,7 @@
 		max-width: 34rem 
 		width: 100%
 	&__btn 
+		position: relative
 		min-width: 50px
 		min-height: 50px
 		max-height: 56px
@@ -75,9 +76,6 @@
 		border-radius: var(--br-small)
 		padding: 1.4rem
 		transition: background-color .3s ease, transform .3s ease, color .3s ease
-		&_active 
-			background-color: var(--accent-color)
-			color: var(--white-color)
 		@include mixins.respond('mini-tablet')
 			padding: 1rem
 			span 
@@ -86,6 +84,27 @@
 			min-width: 30px 
 			min-height: 30px
 			padding: .5rem
+		&_icon 
+			display: inline-flex 
+			justify-content: center 
+			align-items: center
+			position: absolute
+			top: -1rem 
+			right: -1rem
+			width: 20px 
+			height: 20px 
+			background-color: var(--accent-color)
+			color: var(--white-color)
+			border-radius: 50px
+			@include mixins.respond('tablet')
+				display: inline-flex !important
+			@include mixins.respond('phone')
+				width: 15px 
+				height: 15px
+				font-size: 10px
+		&_active 
+			background-color: var(--accent-color)
+			color: var(--white-color)
 		&:hover 
 			background-color: var(--accent-color)
 			color: var(--white-color)
@@ -104,7 +123,6 @@
 			height: 15px
 
 .category
-	&__nav
 	&__list 
 		display: flex
 		align-items: center
@@ -177,7 +195,6 @@
 		&:hover 
 			color: var(--accent-color)
 			transform: scale(.9)
-			.category__icon
 		
 	&__icon 
 		display: block

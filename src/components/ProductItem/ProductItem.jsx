@@ -3,8 +3,10 @@ import cn from 'classnames'
 
 import { useDispatch, useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom'
+import { useState } from 'react'
 
 import { addProduct } from '../../Store/basketSlice'
+import { addProduct as pushProduct } from '../../Store/favoriteSlice'
 
 import Button from '../Button'
 
@@ -26,25 +28,27 @@ const ProductItem = ({
   volume,
 }) => {
   const dispatch = useDispatch(),
-    addBasketProduct = () => dispatch(addProduct({id, volume, img, title, weight, price}))
+    [isFavorite, setIsFavorite] = useState(false),
+    addBasketProduct = () =>
+      dispatch(addProduct({ id, volume, img, title, weight, price }))
 
-	
+
 
   return (
-    <li className={styles.product}>
-      <ul className={styles.product__labels}>
+    <li data-product className={styles.product}>
+      <ul data-labels className={styles.product__labels}>
         {labels?.map(label => (
           <li key={label} className={styles.product__label}>
             {label}
           </li>
         ))}
       </ul>
-      <div className={styles.product__img_box}>
+      <div data-box className={styles.product__img_box}>
         <NavLink to="/2123">
           <img src={img} alt="Суши" className={styles.product__img} />
         </NavLink>
       </div>
-      <ul className={styles.product__filters}>
+      <ul data-filters className={styles.product__filters}>
         {filters?.map(filter => {
           const img =
             filter === 'chili' ? chili : filter === 'vegan' ? vegan : lactose
@@ -56,7 +60,7 @@ const ProductItem = ({
           )
         })}
       </ul>
-      <div className={styles.product__info}>
+      <div data-info className={styles.product__info}>
         <h3 className={cn(styles.product__title, 'third-title')}>{title}</h3>
         <span className={styles.product__weight}>
           {weight ? 'Вес' : 'Обьем'} {weight || volume} {weight ? 'г' : 'л'}
@@ -80,13 +84,30 @@ const ProductItem = ({
         </ul>
       </div>
 
-      <div className={styles.product__actions}>
+      <div data-action className={styles.product__actions}>
         <div className={styles.product__price_box}>
           <span className={styles.product__price}>{price} </span>
           <span className={styles.product__currency}>грн</span>
         </div>
 
-        <Button>
+        <Button
+		
+          onClick={() => {
+            dispatch(
+              pushProduct({
+                id,
+                labels,
+                img,
+                title,
+                weight,
+                ingridients,
+                price,
+              })
+            )
+            setIsFavorite(!isFavorite)
+          }}
+		  style={isFavorite ? {backgroundColor: '#FF6633', color: 'white'} : null}
+        >
           <svg className={styles.product__actions_icon}>
             <use xlinkHref="icons/sprite.svg#icon-hearth" />
           </svg>

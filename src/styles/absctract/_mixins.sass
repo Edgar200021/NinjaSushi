@@ -40,3 +40,23 @@
 	&:active 
 		transform: translateY(-2px)
 		background-color: $bg-darkest
+
+@mixin buttonClose($bgbtn: var(--grey-color), $bgicon: var(--black-color))
+	position: relative
+	display: inline-block
+	width: 32px 
+	height: 32px
+	border-radius: 8px 
+	background-color: $bgbtn
+	&::after,&::before 
+		content: ''
+		position: absolute 
+		left: 50%
+		top: 50%
+		width: 2px 
+		height: 12px 
+		background-color: $bgicon
+	&::before
+		transform: translate(-50%, -50%) rotate(45deg)
+	&::after
+		transform: translate(-50%, -50%) rotate(-45deg)	

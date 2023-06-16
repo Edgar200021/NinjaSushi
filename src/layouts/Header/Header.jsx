@@ -1,11 +1,13 @@
 import { NavLink } from 'react-router-dom'
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
+import { useSelector } from 'react-redux'
 
 import cn from 'classnames'
 
 import Logo from '../../components/Logo'
 import BurgerMenu from '../../components/BurgerMenu'
 import Basket from '../../components/Basket'
+import Favorite from '../../components/Favorite'
 
 import phone from '../../assets/icons/phone.svg'
 
@@ -19,13 +21,29 @@ import sauce from '../../assets/icons/category-nav/sauce.svg'
 import styles from './Header.module.sass'
 
 const Header = () => {
+  const basketProducts = useSelector(
+    state => state.basketProducts.basketProducts
+  )
+  const favoriteProducts = useSelector(state => state.favoriteProducts.products)
+
   const [openMenu, setOpenMenu] = useState(false)
   const [openBasket, setOpenBasket] = useState(false)
+  const [openFavorite, setOpenFavorite] = useState(false)
+
+  const basketTotal = basketProducts
+    .map(product => product.count)
+    .reduce((acc, val) => acc + val, 0)
+
+  const favoriteTotal = favoriteProducts.length
 
   const basketBtnStyle = openBasket
     ? { color: 'white', backgroundColor: '#FF6633' }
     : null
   const basketIconSyle = openBasket ? { color: 'white' } : null
+  const favoriteBtnStyle = openFavorite
+    ? { color: 'white', backgroundColor: '#FF6633' }
+    : null
+  const favoriteIconStyle = openFavorite ? { color: 'white' } : null
 
   const onClickMenu = () => {
     setOpenMenu(!openMenu)
@@ -33,6 +51,14 @@ const Header = () => {
 
   const onClickBasket = () => {
     setOpenBasket(true)
+
+    setTimeout(() => {
+      document.body.style.overflow = 'hidden'
+    })
+  }
+
+  const onClickFavorite = () => {
+    setOpenFavorite(true)
 
     setTimeout(() => {
       document.body.style.overflow = 'hidden'
@@ -78,12 +104,18 @@ const Header = () => {
         </nav>
         <div className={styles.header__actions}>
           <button className={styles.header__btn}>
+            <span className={styles.header__btn_icon}>0</span>
             <svg className={styles.header__icon}>
               <use xlinkHref="icons/sprite.svg#icon-bell" />
             </svg>
           </button>
-          <button className={styles.header__btn}>
-            <svg className={styles.header__icon}>
+          <button
+            style={favoriteBtnStyle}
+            onClick={onClickFavorite}
+            className={styles.header__btn}
+          >
+            <span className={styles.header__btn_icon}>{favoriteTotal}</span>
+            <svg style={favoriteIconStyle} className={styles.header__icon}>
               <use xlinkHref="icons/sprite.svg#icon-hearth" />
             </svg>
           </button>
@@ -98,6 +130,7 @@ const Header = () => {
             className={styles.header__btn}
           >
             <span>Корзина</span>
+            <span className={styles.header__btn_icon}>{basketTotal}</span>
             <svg style={basketIconSyle} className={styles.header__icon}>
               <use xlinkHref="icons/sprite.svg#icon-basket" />
             </svg>
@@ -105,6 +138,10 @@ const Header = () => {
           <BurgerMenu openedMenu={openMenu} onClickMenu={onClickMenu} />
         </div>
         <Basket openBasket={openBasket} onCloseBasket={setOpenBasket} />
+        <Favorite
+          openFavorite={openFavorite}
+          onCloseFavorite={setOpenFavorite}
+        />
       </div>
       <div className={styles.header__bottom}>
         <nav className={styles.category__nav}>

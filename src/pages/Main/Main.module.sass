@@ -8,6 +8,7 @@
 	grid-template-rows: repeat(8, min-content)
 	margin-bottom: 4rem
 	@include mixins.respond('mini-phone')
+		grid-template-columns: [full-start] minmax(2.5rem, 1fr) [center-start] repeat(8, minmax(min-content, 19rem)) [center-end] minmax(2.5rem, 1fr)
 		grid-template-rows: minmax(75rem, 76rem) repeat(7, min-content)
 	
 .section 

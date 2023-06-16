@@ -48,6 +48,8 @@
 		button 
 			max-width: 15rem
 			@include mixins.button(var(--green-color), #F5F5F7, #F5F5F7, #F5F5F7)
+			@include mixins.respond('mini-phone')
+				max-width: 20rem
 	&__price 
 		@include mixins.font(4rem, 3.2rem, 700)
 	&__currency 

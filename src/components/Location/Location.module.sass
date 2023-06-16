@@ -1,22 +1,27 @@
 @use '../../styles/absctract/_mixins'
 	
 .map	
-	min-width: 98vw
+	max-width: 95% 
+	margin: 0 auto
 	div
-		width: 98vw !important
+		width: 95vw !important
 		height: 50rem !important
 		margin: 0 auto
 	&__container 
 		grid-column: full-start / full-end
 		text-align: center
 		margin-bottom: 10rem
+		transform: translateX(-10px)
+		@include mixins.respond('phone')
+			transform: translateX(0px)
 	&__title 
 		max-width: 120rem 
 		margin: 0 auto
 		margin-bottom: 5rem
 		@include mixins.respond('phone')
 			max-width: 50rem
-
+		@include mixins.respond('mini-phone')
+			max-width: 45rem 
 	&__labels 
 		margin-bottom: 1.6rem
 	&__label 
@@ -27,6 +32,8 @@
 			max-width: 30rem
 			display: block
 			margin: 0 auto
+		@include mixins.respond('mini-phone')
+			max-width: 35rem
 		&::before 
 			content: ''
 			width: 30px 
