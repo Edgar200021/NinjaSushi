@@ -147,7 +147,7 @@ const Header = () => {
         <nav className={styles.category__nav}>
           <ul className={styles.category__list}>
             <li className={styles.category__item}>
-              <NavLink to="/1" className={styles.category__link}>
+              <NavLink to="/rolles" className={styles.category__link}>
                 <span
                   className={styles.category__icon}
                   style={{ backgroundImage: `url(${role})` }}
@@ -156,7 +156,7 @@ const Header = () => {
               </NavLink>
             </li>
             <li className={styles.category__item}>
-              <NavLink to="/2" className={styles.category__link}>
+              <NavLink to="/sushi" className={styles.category__link}>
                 <span
                   className={styles.category__icon}
                   style={{ backgroundImage: `url(${sushi})` }}
@@ -165,7 +165,7 @@ const Header = () => {
               </NavLink>
             </li>
             <li className={styles.category__item}>
-              <NavLink to="/3" className={styles.category__link}>
+              <NavLink to="/sets" className={styles.category__link}>
                 <span
                   className={styles.category__icon}
                   style={{ backgroundImage: `url(${sets})` }}
@@ -174,7 +174,7 @@ const Header = () => {
               </NavLink>
             </li>
             <li className={styles.category__item}>
-              <NavLink to="/4" className={styles.category__link}>
+              <NavLink to="/snacks" className={styles.category__link}>
                 <span
                   className={styles.category__icon}
                   style={{ backgroundImage: `url(${boules})` }}
@@ -183,7 +183,7 @@ const Header = () => {
               </NavLink>
             </li>
             <li className={styles.category__item}>
-              <NavLink to="/5" className={styles.category__link}>
+              <NavLink to="/drinks" className={styles.category__link}>
                 <span
                   className={styles.category__icon}
                   style={{ backgroundImage: `url(${drink})` }}

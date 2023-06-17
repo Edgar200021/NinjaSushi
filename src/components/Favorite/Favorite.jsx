@@ -37,7 +37,7 @@ const Favorite = ({ openFavorite, onCloseFavorite }) => {
           ) : (
             <div className={styles.favorite__empty}>
               <span className={styles.favorite__empty_supdescr}>
-                Вы еще ничегоне добавили в избранное
+                Вы еще ничего не добавили в избранное
               </span>
               <span className={styles.favorite__empty_subdescr}>
                 Переходите в интересующую вас категорию и отмечайте

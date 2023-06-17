@@ -2,13 +2,15 @@ import cn from 'classnames'
 import { NavLink } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 
-import { getData } from '../../utils/fetchData'
 import Banner from '../../components/Banner'
 import Button from '../../components/Button'
 import ProductsList from '../../components/ProductsList'
 import BestOffer from '../../components/BestOffer'
 import Location from '../../components/Location'
 import DownloadApp from '../../components/DownloadApp'
+
+import { getData } from '../../utils/fetchData'
+import { PRODUCTS_URL } from '../../constants/url'
 
 import styles from './Main.module.sass'
 
@@ -29,7 +31,7 @@ const Main = () => {
   }
 
   useEffect(() => {
-    getProducts('http://localhost:4000/products')
+    getProducts(PRODUCTS_URL)
   }, [])
 
   return (

@@ -60,7 +60,7 @@ const BurgerMenu = ({ openedMenu, onClickMenu }) => {
               </NavLink>
             </li>
             <li className={cn(styles.burger__item, styles.burger__item_nav)}>
-              <NavLink onClick={closeModal} className={styles.burger__link}>
+              <NavLink to='/rolles' onClick={closeModal} className={styles.burger__link}>
                 <span
                   style={{ backgroundImage: `url(${roles})` }}
                   className={styles.burger__icon}
@@ -69,7 +69,7 @@ const BurgerMenu = ({ openedMenu, onClickMenu }) => {
               </NavLink>
             </li>
             <li className={cn(styles.burger__item, styles.burger__item_nav)}>
-              <NavLink onClick={closeModal} className={styles.burger__link}>
+              <NavLink to='/sets' onClick={closeModal} className={styles.burger__link}>
                 <span
                   style={{ backgroundImage: `url(${sets})` }}
                   className={styles.burger__icon}
@@ -78,7 +78,7 @@ const BurgerMenu = ({ openedMenu, onClickMenu }) => {
               </NavLink>
             </li>
             <li className={cn(styles.burger__item, styles.burger__item_nav)}>
-              <NavLink onClick={closeModal} className={styles.burger__link}>
+              <NavLink to='/snacks'onClick={closeModal} className={styles.burger__link}>
                 <span
                   style={{ backgroundImage: `url(${bouls})` }}
                   className={styles.burger__icon}
@@ -87,7 +87,7 @@ const BurgerMenu = ({ openedMenu, onClickMenu }) => {
               </NavLink>
             </li>
             <li className={cn(styles.burger__item, styles.burger__item_nav)}>
-              <NavLink onClick={closeModal} className={styles.burger__link}>
+              <NavLink to='/drinks' onClick={closeModal} className={styles.burger__link}>
                 <span
                   style={{ backgroundImage: `url(${drink})` }}
                   className={styles.burger__icon}
@@ -96,7 +96,7 @@ const BurgerMenu = ({ openedMenu, onClickMenu }) => {
               </NavLink>
             </li>
             <li className={cn(styles.burger__item, styles.burger__item_nav)}>
-              <NavLink onClick={closeModal} className={styles.burger__link}>
+              <NavLink  to='/sauce' onClick={closeModal} className={styles.burger__link}>
                 <span
                   style={{ backgroundImage: `url(${sauce})` }}
                   className={styles.burger__icon}

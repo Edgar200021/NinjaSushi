@@ -51,7 +51,7 @@ const ProductItem = ({
       <ul data-filters className={styles.product__filters}>
         {filters?.map(filter => {
           const img =
-            filter === 'chili' ? chili : filter === 'vegan' ? vegan : lactose
+            filter === 'Острые' ? chili : filter === 'Вегетарианские' ? vegan : lactose
 
           return (
             <li key={filter} className={styles.product__filter}>

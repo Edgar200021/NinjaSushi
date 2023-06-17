@@ -70,8 +70,8 @@ BestOfferItem.propTypes = {
   ingridients: PropTypes.array,
   title: PropTypes.string,
   price: PropTypes.number,
-  weight: PropTypes.string,
-  volume: PropTypes.string,
+  weight: PropTypes.number,
+  volume: PropTypes.number,
   img: PropTypes.string,
 }
 
