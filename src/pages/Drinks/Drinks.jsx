@@ -13,12 +13,11 @@ import {
   useFilteredAndSortedProducts,
   useFilteredByProperty,
 } from '../../hooks/useProducts'
+import { drinksSubCategory } from '../../constants/category'
 
-import { foodProperties, foodSubCategory } from '../../constants/category'
+import styles from './Drinks.module.sass'
 
-import styles from './Rolles.module.sass'
-
-const Rolles = () => {
+const Drinks = () => {
   const [data, setData] = useState([])
   const [filter, setFilter] = useState({
     filterByCategory: '',
@@ -38,7 +37,7 @@ const Rolles = () => {
       return
     }
 
-    setData(data.filter(item => item.category === 'roles'))
+    setData(data.filter(item => item.category === 'drinks'))
     setFetchError(false)
     setLoading(false)
   }
@@ -95,7 +94,7 @@ const Rolles = () => {
 
   return (
     <main className={styles.main}>
-      <h2 className={cn(styles.main__title, 'second-title')}>Роллы</h2>
+      <h2 className={cn(styles.main__title, 'second-title')}>Напитки</h2>
       {loading ? (
         <Spinner />
       ) : (
@@ -103,8 +102,8 @@ const Rolles = () => {
         emptyContent || (
           <>
             <ProductFilter
-			properties={foodProperties}
-			subCategory={foodSubCategory}
+			 inputName='input5'
+			  subCategory={drinksSubCategory}
               sortByPrice={sortByPrice}
               filterByProperty={filterByProperty}
               defaultValue="Сортировка по"
@@ -118,4 +117,4 @@ const Rolles = () => {
   )
 }
 
-export default Rolles
+export default Drinks

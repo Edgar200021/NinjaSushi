@@ -25,3 +25,20 @@ export const useFilteredAndSortedProducts = (sort, filteredData) => {
 
   return filteredAndSortedProducts
 }
+
+
+
+export const useFilteredByProperty = (properties, data) => {
+	const filteredByProperty = useMemo(() => {
+		if (!properties.length) return data
+	
+		return data.filter(product => {
+		  return product.filters
+			.sort()
+			.join(' ')
+			.includes(properties.sort().join(' '))
+		})
+	  }, [data, properties])
+
+	  return filteredByProperty
+}

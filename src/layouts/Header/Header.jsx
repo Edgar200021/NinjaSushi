@@ -179,7 +179,7 @@ const Header = () => {
                   className={styles.category__icon}
                   style={{ backgroundImage: `url(${boules})` }}
                 ></span>
-                <span className={styles.category__descr}>Боулы</span>
+                <span className={styles.category__descr}>Закуски</span>
               </NavLink>
             </li>
             <li className={styles.category__item}>
@@ -192,7 +192,7 @@ const Header = () => {
               </NavLink>
             </li>
             <li className={styles.category__item}>
-              <NavLink to="/6" className={styles.category__link}>
+              <NavLink to="/sauce" className={styles.category__link}>
                 <span
                   className={styles.category__icon}
                   style={{ backgroundImage: `url(${sauce})` }}

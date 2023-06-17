@@ -16,9 +16,9 @@ import {
 
 import { foodProperties, foodSubCategory } from '../../constants/category'
 
-import styles from './Rolles.module.sass'
+import styles from './Sauce.module.sass'
 
-const Rolles = () => {
+const Sauce = () => {
   const [data, setData] = useState([])
   const [filter, setFilter] = useState({
     filterByCategory: '',
@@ -38,7 +38,7 @@ const Rolles = () => {
       return
     }
 
-    setData(data.filter(item => item.category === 'roles'))
+    setData(data.filter(item => item.category === 'sauce'))
     setFetchError(false)
     setLoading(false)
   }
@@ -95,14 +95,15 @@ const Rolles = () => {
 
   return (
     <main className={styles.main}>
-      <h2 className={cn(styles.main__title, 'second-title')}>Роллы</h2>
+      <h2 className={cn(styles.main__title, 'second-title')}>Соусы</h2>
       {loading ? (
         <Spinner />
       ) : (
         error ||
         emptyContent || (
           <>
-            <ProductFilter
+            <ProductFilter	
+			inputName='input6'
 			properties={foodProperties}
 			subCategory={foodSubCategory}
               sortByPrice={sortByPrice}
@@ -118,4 +119,4 @@ const Rolles = () => {
   )
 }
 
-export default Rolles
+export default Sauce

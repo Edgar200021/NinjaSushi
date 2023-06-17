@@ -2,7 +2,7 @@ import ProductItem from '../ProductItem'
 
 import styles from './ProductsList.module.sass'
 
-const ProductsList = ({ data, category = ''}) => {
+const ProductsList = ({ data, category = '' }) => {
   const elem = category
     ? data
         .filter(item => item.category === category)
@@ -13,7 +13,13 @@ const ProductsList = ({ data, category = ''}) => {
         return <ProductItem key={item.id} {...item} />
       })
 
-  return <ul className={styles.productlist}>{elem}</ul>
+  const content = data.length ? (
+    <ul className={styles.productlist}>{elem}</ul>
+  ) : (
+    <span className={styles.productlist__span}>Товары отсуствуют</span>
+  )
+
+  return content
 }
 
 export default ProductsList
