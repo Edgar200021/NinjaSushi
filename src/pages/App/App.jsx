@@ -6,45 +6,26 @@ import { getData } from '../../utils/fetchData'
 import Header from '../../layouts/Header'
 import Footer from '../../layouts/Footer'
 import routeConfig from '../../routes/routeConfig'
+import SingleItemPage from '../SingleItemPage'
 
 import styles from './App.module.sass'
 
 const App = () => {
+  return (
+    <div className={styles.app}>
+      <BrowserRouter>
+        <Header />
 
-	const [productsData, setProductsData] = useState([])
-	const [error, setError] = useState(false)
+        <Routes>
+          <Route path="/products/:id" element={<SingleItemPage />} />
 
-  
-	const getProducts = async (url) => {
-	  const data = await getData(url)
-  
-	  if (!data) {
-		setError(true)
-		return
-	  }
-  
-	  setProductsData(data)
-	  setError(false)
-	}
-  
-	useEffect(() => {
-	  getProducts('http://localhost:4000/products')
-	}, [])
-
-	return (
-	  <div className={styles.app}>
-		<BrowserRouter>
-		  <Header />
-		  <Routes>
-			{routeConfig.map(({path, element}, index) => {
-				return <Route key={index} path={path} element={element()}/>
-			})
-			}
-		  </Routes>
-		  <Footer />
-		</BrowserRouter>
-	  </div>
-	)
-  }
+          {routeConfig.map(({ path, element }, index) => {
+            return <Route key={index} path={path} element={element()} />
+          })}
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </div>
+  )
+}
 export default App
-

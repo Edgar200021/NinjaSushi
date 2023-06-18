@@ -107,7 +107,7 @@ const BurgerMenu = ({ openedMenu, onClickMenu }) => {
             <li className={cn(styles.burger__item, styles.burger__item_nav2)}>
               <NavLink onClick={closeModal} className={styles.burger__link}>
                 <svg className={styles.burger__icon_small}>
-                  <use xlinkHref="icons/sprite.svg#icon-basket" />
+                  <use xlinkHref="%PUBLIC_URL%/icons/sprite.svg#icon-basket" />
                 </svg>
                 <span>Повторить прошлый заказ</span>
               </NavLink>
@@ -115,7 +115,7 @@ const BurgerMenu = ({ openedMenu, onClickMenu }) => {
             <li className={cn(styles.burger__item, styles.burger__item_nav2)}>
               <NavLink onClick={closeModal} className={styles.burger__link}>
                 <svg className={styles.burger__icon_small}>
-                  <use xlinkHref="icons/sprite.svg#icon-hearth" />
+                  <use xlinkHref="%PUBLIC_URL%/icons/sprite.svg#icon-hearth" />
                 </svg>
                 <span>Избранное</span>
               </NavLink>
@@ -123,7 +123,7 @@ const BurgerMenu = ({ openedMenu, onClickMenu }) => {
             <li className={cn(styles.burger__item, styles.burger__item_nav2)}>
               <NavLink onClick={closeModal} className={styles.burger__link}>
                 <svg className={styles.burger__icon_small}>
-                  <use xlinkHref="icons/sprite.svg#icon-user" />
+                  <use xlinkHref="%PUBLIC_URL%/icons/sprite.svg#icon-user" />
                 </svg>
                 <span>Профиль</span>
               </NavLink>

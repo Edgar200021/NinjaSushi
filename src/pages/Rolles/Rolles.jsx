@@ -78,6 +78,18 @@ const Rolles = () => {
     })
   }
 
+  const resetFilter = () => {
+    setFilter({
+      filterByCategory: '',
+      filterByProperty: [],
+      sortedByPrice: '',
+    })
+  }
+
+  useEffect(() => {
+    resetFilter()
+  }, [])
+
   const filteredData = useFilteredProducts(filter.filterByCategory, data)
 
   const filteredAndSortedData = useFilteredAndSortedProducts(
@@ -103,8 +115,8 @@ const Rolles = () => {
         emptyContent || (
           <>
             <ProductFilter
-			properties={foodProperties}
-			subCategory={foodSubCategory}
+              properties={foodProperties}
+              subCategory={foodSubCategory}
               sortByPrice={sortByPrice}
               filterByProperty={filterByProperty}
               defaultValue="Сортировка по"

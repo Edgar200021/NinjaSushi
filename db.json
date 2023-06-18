@@ -3,7 +3,7 @@
     {
       "id": 1,
       "labels": ["hit", "new"],
-      "img": "./img/sushi/img-1.png",
+      "img": "/img/sushi/img-1.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Гункан лосось",
       "weight": 40,
@@ -14,6 +14,64 @@
         "бальзамик",
         "трюфельная сальса",
         "кунжутное масло"
+      ],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        },
+        {
+          "img": "/img/ingridients/img-12.png",
+          "descr": "Помидор"
+        },
+        {
+          "img": "/img/ingridients/img-13.png",
+          "descr": "Гриб шитаки"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
       ],
       "price": 190,
       "category": "sushi",
@@ -30,11 +88,49 @@
     {
       "id": 2,
       "labels": ["hit", "new"],
-      "img": "./img/sushi/img-2.png",
+      "img": "/img/sushi/img-2.png",
       "filters": ["Острые", "Вегетарианские"],
       "title": "Гункан креветка",
       "weight": 60,
       "ingridients": ["Нори", "рис", "японский майонез", "бальзамик"],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        }
+      ],
       "price": 220,
       "category": "sushi",
       "subcategory": ["Классические", "Феликсы", "Сладкие"],
@@ -43,7 +139,7 @@
     {
       "id": 3,
       "labels": ["hit"],
-      "img": "./img/sushi/img-3.png",
+      "img": "/img/sushi/img-3.png",
       "filters": ["Острые", "Безлактозные"],
       "title": "Нигири угорь",
       "weight": 30,
@@ -55,6 +151,32 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+      "components": [
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        },
+        {
+          "img": "/img/ingridients/img-12.png",
+          "descr": "Помидор"
+        },
+        {
+          "img": "/img/ingridients/img-13.png",
+          "descr": "Гриб шитаки"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
+      ],
       "price": 120,
       "category": "sushi",
       "subcategory": ["Классические", "Маки", "Драконы", "Феликсы", "Сладкие"],
@@ -63,11 +185,57 @@
     {
       "id": 4,
       "labels": ["new"],
-      "img": "./img/sushi/img-4.png",
+      "img": "/img/sushi/img-4.png",
       "filters": ["Вегетарианские", "Безлактозные"],
       "title": "Нигири угорь",
       "weight": 80,
       "ingridients": ["Нори", "рис"],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        },
+        {
+          "img": "/img/ingridients/img-12.png",
+          "descr": "Помидор"
+        },
+        {
+          "img": "/img/ingridients/img-13.png",
+          "descr": "Гриб шитаки"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
+      ],
       "price": 300,
       "category": "sushi",
       "subcategory": ["Классические"],
@@ -76,7 +244,7 @@
     {
       "id": 5,
       "labels": [],
-      "img": "./img/sushi/img-5.png",
+      "img": "/img/sushi/img-5.png",
       "filters": ["Безлактозные"],
       "title": "Гункан с тунцом и трюфелем",
       "weight": 100,
@@ -87,6 +255,44 @@
         "бальзамик",
         "трюфельная сальса",
         "кунжутное масло"
+      ],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        }
       ],
       "price": 280,
       "category": "sushi",
@@ -103,11 +309,49 @@
     {
       "id": 6,
       "labels": ["hit", "new"],
-      "img": "./img/sushi/img-6.png",
+      "img": "/img/sushi/img-6.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Гункан тунец спайси",
       "weight": 120,
       "ingridients": ["Нори", "рис"],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        },
+        {
+          "img": "/img/ingridients/img-12.png",
+          "descr": "Помидор"
+        },
+        {
+          "img": "/img/ingridients/img-13.png",
+          "descr": "Гриб шитаки"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
+      ],
       "price": 140,
       "category": "sushi",
       "subcategory": ["Феликсы", "Сладкие"],
@@ -116,7 +360,7 @@
     {
       "id": 7,
       "labels": ["hit", "new"],
-      "img": "./img/sushi/img-7.png",
+      "img": "/img/sushi/img-7.png",
       "filters": ["Острые"],
       "title": "Гункан угорь",
       "weight": 130,
@@ -128,6 +372,36 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
+      ],
       "price": 300,
       "category": "sushi",
       "subcategory": ["Сладкие"],
@@ -136,7 +410,7 @@
     {
       "id": 8,
       "labels": ["hit", "new"],
-      "img": "./img/sushi/img-8.png",
+      "img": "/img/sushi/img-8.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Нигири тунец",
       "weight": 70,
@@ -148,6 +422,32 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+      "components": [
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        },
+        {
+          "img": "/img/ingridients/img-12.png",
+          "descr": "Помидор"
+        },
+        {
+          "img": "/img/ingridients/img-13.png",
+          "descr": "Гриб шитаки"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
+      ],
       "price": 120,
       "category": "sushi",
       "subcategory": ["Маки", "Драконы", "Сладкие"],
@@ -156,7 +456,7 @@
     {
       "id": 9,
       "labels": ["hit", "new"],
-      "img": "./img/roles/img-1.png",
+      "img": "/img/roles/img-1.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Филадельфия с лососем",
       "weight": 40,
@@ -168,6 +468,40 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        }
+      ],
       "price": 190,
       "category": "roles",
       "subcategory": ["Маки"],
@@ -176,11 +510,53 @@
     {
       "id": 10,
       "labels": ["hit", "new"],
-      "img": "./img/roles/img-2.png",
+      "img": "/img/roles/img-2.png",
       "filters": ["Острые", "Вегетарианские"],
       "title": "Филадельфия с угрем",
       "weight": 320,
       "ingridients": ["Нори", "рис", "японский майонез", "бальзамик"],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        },
+        {
+          "img": "/img/ingridients/img-12.png",
+          "descr": "Помидор"
+        },
+        {
+          "img": "/img/ingridients/img-13.png",
+          "descr": "Гриб шитаки"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
+      ],
       "price": 220,
       "category": "roles",
       "subcategory": [
@@ -196,7 +572,7 @@
     {
       "id": 11,
       "labels": ["hit"],
-      "img": "./img/roles/img-3.png",
+      "img": "/img/roles/img-3.png",
       "filters": ["Острые", "Безлактозные"],
       "title": "Кратос",
       "weight": 320,
@@ -208,6 +584,52 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        }
+      ],
       "price": 120,
       "category": "roles",
       "subcategory": ["Классические", "Маки", "Драконы", "Сладкие"],
@@ -216,11 +638,57 @@
     {
       "id": 12,
       "labels": ["new"],
-      "img": "./img/roles/img-4.png",
+      "img": "/img/roles/img-4.png",
       "filters": ["Вегетарианские", "Безлактозные"],
       "title": "Ямамото",
       "weight": 310,
       "ingridients": ["Нори", "рис"],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        },
+        {
+          "img": "/img/ingridients/img-12.png",
+          "descr": "Помидор"
+        },
+        {
+          "img": "/img/ingridients/img-13.png",
+          "descr": "Гриб шитаки"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
+      ],
       "price": 300,
       "category": "roles",
       "subcategory": ["Классические", "Феликсы", "Сладкие"],
@@ -229,7 +697,7 @@
     {
       "id": 13,
       "labels": [],
-      "img": "./img/roles/img-5.png",
+      "img": "/img/roles/img-5.png",
       "filters": ["Безлактозные"],
       "title": "Запеченная креветка",
       "weight": 330,
@@ -241,6 +709,48 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        },
+        {
+          "img": "/img/ingridients/img-12.png",
+          "descr": "Помидор"
+        },
+        {
+          "img": "/img/ingridients/img-13.png",
+          "descr": "Гриб шитаки"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
+      ],
       "price": 280,
       "category": "roles",
       "subcategory": ["Феликсы", "Сладкие"],
@@ -249,11 +759,49 @@
     {
       "id": 14,
       "labels": ["hit", "new"],
-      "img": "./img/roles/img-6.png",
+      "img": "/img/roles/img-6.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Сырный с лососем",
       "weight": 350,
       "ingridients": ["Нори", "рис"],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        }
+      ],
       "price": 140,
       "category": "roles",
       "subcategory": ["Запеченные", "Феликсы", "Сладкие"],
@@ -262,7 +810,7 @@
     {
       "id": 15,
       "labels": ["hit", "new"],
-      "img": "./img/roles/img-7.png",
+      "img": "/img/roles/img-7.png",
       "filters": ["Острые"],
       "title": "Микаса",
       "weight": 235,
@@ -274,6 +822,56 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        },
+        {
+          "img": "/img/ingridients/img-12.png",
+          "descr": "Помидор"
+        },
+        {
+          "img": "/img/ingridients/img-13.png",
+          "descr": "Гриб шитаки"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
+      ],
       "price": 300,
       "category": "roles",
       "subcategory": ["Классические", "Маки", "Драконы", "Запеченные"],
@@ -282,7 +880,7 @@
     {
       "id": 16,
       "labels": ["hit", "new"],
-      "img": "./img/roles/img-1.png",
+      "img": "/img/roles/img-1.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Комбо Филадельфия",
       "weight": 325,
@@ -294,6 +892,44 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        }
+      ],
       "price": 120,
       "category": "roles",
       "subcategory": ["Драконы", "Запеченные", "Феликсы", "Сладкие"],
@@ -302,7 +938,7 @@
     {
       "id": 17,
       "labels": ["hit", "new"],
-      "img": "./img/sets/img-1.png",
+      "img": "/img/sets/img-1.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Сет #1",
       "weight": 950,
@@ -314,6 +950,48 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        },
+        {
+          "img": "/img/ingridients/img-12.png",
+          "descr": "Помидор"
+        },
+        {
+          "img": "/img/ingridients/img-13.png",
+          "descr": "Гриб шитаки"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
+      ],
       "price": 120,
       "category": "sets",
       "subcategory": [
@@ -324,12 +1002,13 @@
         "Феликсы",
         "Сладкие"
       ],
+
       "isOffer": true
     },
     {
       "id": 18,
       "labels": ["hit", "new"],
-      "img": "./img/sets/img-2.png",
+      "img": "/img/sets/img-2.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Сет #2",
       "weight": 895,
@@ -341,6 +1020,45 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        }
+      ],
       "price": 120,
       "category": "sets",
       "subcategory": ["Классические", "Маки", "Драконы"],
@@ -349,7 +1067,7 @@
     {
       "id": 19,
       "labels": ["hit", "new"],
-      "img": "./img/sets/img-3.png",
+      "img": "/img/sets/img-3.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Сет #3",
       "weight": 900,
@@ -361,6 +1079,44 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        }
+      ],
       "price": 120,
       "category": "sets",
       "subcategory": ["Феликсы", "Сладкие"],
@@ -369,7 +1125,7 @@
     {
       "id": 20,
       "labels": ["hit", "new"],
-      "img": "./img/sets/img-4.png",
+      "img": "/img/sets/img-4.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Сет Осака",
       "weight": 252,
@@ -381,6 +1137,40 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        }
+      ],
       "price": 120,
       "category": "sets",
       "subcategory": ["Сладкие"],
@@ -389,7 +1179,7 @@
     {
       "id": 21,
       "labels": ["hit", "new"],
-      "img": "./img/sets/img-5.png",
+      "img": "/img/sets/img-5.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Суши лосось в нори",
       "weight": 1600,
@@ -401,6 +1191,64 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        },
+        {
+          "img": "/img/ingridients/img-12.png",
+          "descr": "Помидор"
+        },
+        {
+          "img": "/img/ingridients/img-13.png",
+          "descr": "Гриб шитаки"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
+      ],
       "price": 120,
       "category": "sets",
       "subcategory": ["Запеченные", "Феликсы", "Сладкие"],
@@ -409,7 +1257,7 @@
     {
       "id": 22,
       "labels": ["hit", "new"],
-      "img": "./img/sets/img-6.png",
+      "img": "/img/sets/img-6.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Сет #7",
       "weight": 1400,
@@ -421,6 +1269,64 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        },
+        {
+          "img": "/img/ingridients/img-12.png",
+          "descr": "Помидор"
+        },
+        {
+          "img": "/img/ingridients/img-13.png",
+          "descr": "Гриб шитаки"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
+      ],
       "price": 120,
       "category": "sets",
       "subcategory": ["Феликсы", "Сладкие"],
@@ -429,7 +1335,7 @@
     {
       "id": 23,
       "labels": ["hit", "new"],
-      "img": "./img/sets/img-7.png",
+      "img": "/img/sets/img-7.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Сет #7",
       "weight": 1350,
@@ -441,6 +1347,64 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        },
+        {
+          "img": "/img/ingridients/img-12.png",
+          "descr": "Помидор"
+        },
+        {
+          "img": "/img/ingridients/img-13.png",
+          "descr": "Гриб шитаки"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
+      ],
       "price": 120,
       "category": "sets",
       "subcategory": ["Классические", "Феликсы", "Сладкие"],
@@ -449,7 +1413,7 @@
     {
       "id": 24,
       "labels": ["hit", "new"],
-      "img": "./img/sets/img-8.png",
+      "img": "/img/sets/img-8.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Гункан Сет",
       "weight": 1400,
@@ -461,6 +1425,52 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        },
+        {
+          "img": "/img/ingridients/img-12.png",
+          "descr": "Помидор"
+        },
+        {
+          "img": "/img/ingridients/img-13.png",
+          "descr": "Гриб шитаки"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
+      ],
       "price": 120,
       "category": "sets",
       "subcategory": ["Классические", "Маки"],
@@ -469,8 +1479,26 @@
     {
       "id": 25,
       "labels": ["hit", "new"],
-      "img": "./img/snacks/img-1.png",
+      "img": "/img/snacks/img-1.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        }
+      ],
       "title": "Тартар из лосося с халапеньо",
       "weight": 180,
       "ingridients": [
@@ -481,6 +1509,7 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+	  
       "price": 120,
       "category": "snacks",
       "subcategory": [
@@ -491,12 +1520,13 @@
         "Феликсы",
         "Сладкие"
       ],
+
       "isOffer": false
     },
     {
       "id": 26,
       "labels": ["hit", "new"],
-      "img": "./img/snacks/img-2.png",
+      "img": "/img/snacks/img-2.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Тартар из лосося с авокадо",
       "weight": 180,
@@ -507,6 +1537,44 @@
         "бальзамик",
         "трюфельная сальса",
         "кунжутное масло"
+      ],
+	  "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        }
       ],
       "price": 120,
       "category": "snacks",
@@ -523,7 +1591,7 @@
     {
       "id": 27,
       "labels": ["hit", "new"],
-      "img": "./img/snacks/img-3.png",
+      "img": "/img/snacks/img-3.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Салат Чука-Вакаме",
       "weight": 185,
@@ -535,6 +1603,64 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+	  "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        },
+        {
+          "img": "/img/ingridients/img-12.png",
+          "descr": "Помидор"
+        },
+        {
+          "img": "/img/ingridients/img-13.png",
+          "descr": "Гриб шитаки"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
+      ],
       "price": 120,
       "category": "snacks",
       "subcategory": ["Классические", "Запеченные", "Феликсы", "Сладкие"],
@@ -543,7 +1669,7 @@
     {
       "id": 28,
       "labels": ["hit", "new"],
-      "img": "./img/snacks/img-4.png",
+      "img": "/img/snacks/img-4.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Салат с киноа, авокадо и курицей",
       "weight": 252,
@@ -555,6 +1681,64 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+	  "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        },
+        {
+          "img": "/img/ingridients/img-12.png",
+          "descr": "Помидор"
+        },
+        {
+          "img": "/img/ingridients/img-13.png",
+          "descr": "Гриб шитаки"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
+      ],
       "price": 120,
       "category": "snacks",
       "subcategory": ["Классические"],
@@ -563,7 +1747,7 @@
     {
       "id": 29,
       "labels": ["hit", "new"],
-      "img": "./img/snacks/img-5.png",
+      "img": "/img/snacks/img-5.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Инари с тунцом и трюфелем",
       "weight": 60,
@@ -575,6 +1759,64 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+	  "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        },
+        {
+          "img": "/img/ingridients/img-12.png",
+          "descr": "Помидор"
+        },
+        {
+          "img": "/img/ingridients/img-13.png",
+          "descr": "Гриб шитаки"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
+      ],
       "price": 120,
       "category": "snacks",
       "subcategory": [],
@@ -583,7 +1825,7 @@
     {
       "id": 30,
       "labels": ["hit", "new"],
-      "img": "./img/snacks/img-6.png",
+      "img": "/img/snacks/img-6.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Инари с морским гребешком и сыром",
       "weight": 60,
@@ -595,6 +1837,52 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+	  "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        },
+        {
+          "img": "/img/ingridients/img-12.png",
+          "descr": "Помидор"
+        },
+        {
+          "img": "/img/ingridients/img-13.png",
+          "descr": "Гриб шитаки"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
+      ],
       "price": 120,
       "category": "snacks",
       "subcategory": [],
@@ -603,7 +1891,7 @@
     {
       "id": 31,
       "labels": ["hit", "new"],
-      "img": "./img/snacks/img-7.png",
+      "img": "/img/snacks/img-7.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Инари с лососем и авокадо",
       "weight": 69,
@@ -615,6 +1903,64 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+	  "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        },
+        {
+          "img": "/img/ingridients/img-7.png",
+          "descr": "Тунец"
+        },
+        {
+          "img": "/img/ingridients/img-8.png",
+          "descr": "Курица"
+        },
+        {
+          "img": "/img/ingridients/img-9.png",
+          "descr": "Тофу"
+        },
+        {
+          "img": "/img/ingridients/img-10.png",
+          "descr": "сыр"
+        },
+        {
+          "img": "/img/ingridients/img-11.png",
+          "descr": "Авокадо"
+        },
+        {
+          "img": "/img/ingridients/img-12.png",
+          "descr": "Помидор"
+        },
+        {
+          "img": "/img/ingridients/img-13.png",
+          "descr": "Гриб шитаки"
+        },
+        {
+          "img": "/img/ingridients/img-14.png",
+          "descr": "Лосось"
+        }
+      ],
       "price": 120,
       "category": "snacks",
       "subcategory": ["Классические", "Маки", "Феликсы", "Сладкие"],
@@ -623,7 +1969,7 @@
     {
       "id": 32,
       "labels": ["hit", "new"],
-      "img": "./img/snacks/img-8.png",
+      "img": "/img/snacks/img-8.png",
       "filters": ["Острые", "Вегетарианские", "Безлактозные"],
       "title": "Тартар микс",
       "weight": 225,
@@ -635,6 +1981,32 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
+	  "components": [
+        {
+          "img": "/img/ingridients/img-1.png",
+          "descr": "Нори"
+        },
+        {
+          "img": "/img/ingridients/img-2.png",
+          "descr": "Кунжут"
+        },
+        {
+          "img": "/img/ingridients/img-3.png",
+          "descr": "Сыр"
+        },
+        {
+          "img": "/img/ingridients/img-4.png",
+          "descr": "Рис"
+        },
+        {
+          "img": "/img/ingridients/img-5.png",
+          "descr": "Огурец"
+        },
+        {
+          "img": "/img/ingridients/img-6.png",
+          "descr": "Угорь"
+        }
+      ],
       "price": 120,
       "category": "snacks",
       "subcategory": ["Классические", "Маки", "Феликсы", "Сладкие"],
@@ -642,7 +2014,7 @@
     },
     {
       "id": 33,
-      "img": "./img/drinks/img-1.png",
+      "img": "/img/drinks/img-1.png",
       "title": "Coca-Cola 0.25(ст)",
       "volume": 0.25,
       "price": 190,
@@ -652,7 +2024,7 @@
     },
     {
       "id": 34,
-      "img": "./img/drinks/img-2.png",
+      "img": "/img/drinks/img-2.png",
       "title": "Fanta",
       "volume": 0.5,
       "price": 150,
@@ -662,7 +2034,7 @@
     },
     {
       "id": 35,
-      "img": "./img/drinks/img-3.png",
+      "img": "/img/drinks/img-3.png",
       "title": "Моршинская негаз.",
       "volume": 0.5,
       "price": 90,
@@ -672,7 +2044,7 @@
     },
     {
       "id": 36,
-      "img": "./img/drinks/img-4.png",
+      "img": "/img/drinks/img-4.png",
       "title": "Берн",
       "volume": 0.5,
       "price": 120,
@@ -682,7 +2054,7 @@
     },
     {
       "id": 37,
-      "img": "./img/drinks/img-5.png",
+      "img": "/img/drinks/img-5.png",
       "title": "Coca-Cola Vanilla",
       "volume": 1,
       "price": 60,
@@ -692,7 +2064,7 @@
     },
     {
       "id": 38,
-      "img": "./img/drinks/img-6.png",
+      "img": "/img/drinks/img-6.png",
       "title": "Dr Pepper вишня",
       "volume": 30,
       "price": 40,
@@ -702,7 +2074,7 @@
     },
     {
       "id": 39,
-      "img": "./img/drinks/img-7.png",
+      "img": "/img/drinks/img-7.png",
       "title": "Dr Pepper классический",
       "volume": 0.33,
       "price": 100,
@@ -712,7 +2084,7 @@
     },
     {
       "id": 40,
-      "img": "./img/drinks/img-8.png",
+      "img": "/img/drinks/img-8.png",
       "title": "Sprite",
       "volume": 0.5,
       "price": 120,

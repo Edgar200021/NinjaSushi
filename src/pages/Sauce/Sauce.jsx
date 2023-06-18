@@ -103,7 +103,6 @@ const Sauce = () => {
         emptyContent || (
           <>
             <ProductFilter	
-			inputName='input6'
 			properties={foodProperties}
 			subCategory={foodSubCategory}
               sortByPrice={sortByPrice}

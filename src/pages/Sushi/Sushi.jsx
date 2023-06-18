@@ -103,7 +103,6 @@ const Sushi = () => {
         emptyContent || (
           <>
             <ProductFilter
-			 inputName='input2'
               properties={foodProperties}
               subCategory={foodSubCategory}
               sortByPrice={sortByPrice}

@@ -109,12 +109,12 @@ const ProductItem = ({
 		  style={isFavorite ? {backgroundColor: '#FF6633', color: 'white'} : null}
         >
           <svg className={styles.product__actions_icon}>
-            <use xlinkHref="icons/sprite.svg#icon-hearth" />
+            <use xlinkHref="/icons/sprite.svg#icon-hearth" />
           </svg>
         </Button>
         <Button onClick={addBasketProduct}>
           <svg className={styles.product__actions_icon}>
-            <use xlinkHref="icons/sprite.svg#icon-plus" />
+            <use xlinkHref="/icons/sprite.svg#icon-plus" />
           </svg>
         </Button>
       </div>

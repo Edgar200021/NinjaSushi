@@ -103,7 +103,6 @@ const Sets = () => {
         emptyContent || (
           <>
             <ProductFilter
-			 inputName='input3'
 			properties={foodProperties}
 			subCategory={foodSubCategory}
               sortByPrice={sortByPrice}

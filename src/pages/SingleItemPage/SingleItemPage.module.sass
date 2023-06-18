@@ -1,0 +1,27 @@
+@use '../../styles/absctract/_mixins'
+
+.main 
+	grid-column: center-start / center-end
+
+.btn 
+	position: absolute
+	@include mixins.button(var(--green-color), var(--white-color),var(--white-color), var(--white-color) )
+	position: relative
+	width: 12rem
+	top: -10rem
+	z-index: 4
+	padding-left: 40px
+	@include mixins.respond('tablet') 
+		top: 0
+		margin-bottom: 5rem
+	@include mixins.respond('phone') 
+		width: 14rem
+	@include mixins.respond('mini-phone') 
+		width: 17rem
+	&__icon 
+		position: absolute 
+		top: 50% 
+		left: 20px 
+		transform: translateY(-50%)
+		width: 12px 
+		filter: invert(49%) sepia(33%) saturate(4019%) hue-rotate(101deg) brightness(105%) contrast(104%)

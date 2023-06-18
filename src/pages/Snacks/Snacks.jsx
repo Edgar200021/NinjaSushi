@@ -103,7 +103,6 @@ const Snacks = () => {
         emptyContent || (
           <>
             <ProductFilter
-			 inputName='input4'
 			properties={foodProperties}
 			subCategory={foodSubCategory}
               sortByPrice={sortByPrice}

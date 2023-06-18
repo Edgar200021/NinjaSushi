@@ -106,7 +106,7 @@ const Header = () => {
           <button className={styles.header__btn}>
             <span className={styles.header__btn_icon}>0</span>
             <svg className={styles.header__icon}>
-              <use xlinkHref="icons/sprite.svg#icon-bell" />
+              <use xlinkHref="/icons/sprite.svg#icon-bell" />
             </svg>
           </button>
           <button
@@ -116,12 +116,12 @@ const Header = () => {
           >
             <span className={styles.header__btn_icon}>{favoriteTotal}</span>
             <svg style={favoriteIconStyle} className={styles.header__icon}>
-              <use xlinkHref="icons/sprite.svg#icon-hearth" />
+              <use xlinkHref="/icons/sprite.svg#icon-hearth" />
             </svg>
           </button>
           <button className={styles.header__btn}>
             <svg className={styles.header__icon}>
-              <use xlinkHref="icons/sprite.svg#icon-user" />
+              <use xlinkHref="/icons/sprite.svg#icon-user" />
             </svg>
           </button>
           <button
@@ -132,7 +132,7 @@ const Header = () => {
             <span>Корзина</span>
             <span className={styles.header__btn_icon}>{basketTotal}</span>
             <svg style={basketIconSyle} className={styles.header__icon}>
-              <use xlinkHref="icons/sprite.svg#icon-basket" />
+              <use xlinkHref="/icons/sprite.svg#icon-basket" />
             </svg>
           </button>
           <BurgerMenu openedMenu={openMenu} onClickMenu={onClickMenu} />

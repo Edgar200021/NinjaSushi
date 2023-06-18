@@ -13,33 +13,33 @@ const routeConfig = [
     element: Main,
   },
   {
-	path: '/rolles',
-	element: Rolles
+    path: '/rolles',
+    element: Rolles,
   },
   {
-	path: '/sushi',
-	element: Sushi
+    path: '/sushi',
+    element: Sushi,
   },
   {
-	path: '/sets',
-	element: Sets
+    path: '/sets',
+    element: Sets,
   },
   {
-	path: '/snacks',
-	element: Snacks
+    path: '/snacks',
+    element: Snacks,
   },
   {
-	path: '/drinks',
-	element: Drinks
+    path: '/drinks',
+    element: Drinks,
   },
   {
-	path: '/sauce',
-	element: Sauce
+    path: '/sauce',
+    element: Sauce,
   },
   {
-	path: '*',
-	element: NotFoundPage
-  }
+    path: '*',
+    element: NotFoundPage,
+  },
 ]
 
 export default routeConfig
