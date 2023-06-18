@@ -144,7 +144,7 @@ const BurgerMenu = ({ openedMenu, onClickMenu }) => {
               </NavLink>
             </li>
             <li className={cn(styles.burger__item, styles.burger__item_nav2)}>
-              <NavLink onClick={closeModal} className={styles.burger__link}>
+              <NavLink to='/news' onClick={closeModal} className={styles.burger__link}>
                 <span>Новости</span>
               </NavLink>
             </li>

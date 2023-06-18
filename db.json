@@ -2093,5 +2093,160 @@
       "isOffer": false
     }
   ],
-  "basketProducts": []
+  "news": [
+	{
+		"id": 1,
+		"img": "/img/news/img-1.jpg",
+		"genre": "Музыка",
+		"date": "10.06.2022",
+		"description": "6 нових музикальних альбомів для твого плей-листу"
+	},
+	{
+		"id": 2,
+		"img": "/img/news/img-2.jpg",
+		"genre": "Музыка",
+		"date": "10.06.2022",
+		"description": "Ninja вернули лосось"
+	},
+	{
+		"id": 3,
+		"img": "/img/news/img-3.jpg",
+		"genre": "Обновления в меню",
+		"date": "10.06.2022",
+		"description": "Привет! Мы уже на правом!"
+	},
+	{
+		"id": 4,
+		"img": "/img/news/img-4.jpg",
+		"genre": "Обновления в меню",
+		"date": "10.06.2022",
+		"description": "Ninja Sushi вернулись в Днепр!"
+	},
+	{
+		"id": 5,
+		"img": "/img/news/img-5.jpg",
+		"genre": "Обновления в меню",
+		"date": "10.06.2022",
+		"description": "Что посмотреть на Netflix?"
+	},
+	{
+		"id": 6,
+		"img": "/img/news/img-6.jpg",
+		"genre": "Обновления в меню",
+		"date": "10.06.2022",
+		"description": "Романтичный плейлист от Ninja!"
+	},
+	{
+		"id": 7,
+		"img": "/img/news/img-7.jpg",
+		"genre": "Обновления в меню",
+		"date": "10.06.2022",
+		"description": "Таинственное исчезновение роллов с лососем"
+	},
+	{
+		"id": 8,
+		"img": "/img/news/img-8.jpg",
+		"genre": "Обновления в меню",
+		"date": "10.06.2022",
+		"description": "Ninja Sushi в Киеве! Пока только на левом."
+	},
+	{
+		"id": 9,
+		"img": "/img/news/img-9.jpg",
+		"genre": "Обновления в меню",
+		"date": "10.06.2022",
+		"description": "Идеи для свидания на 14 февраля"
+	},
+	{
+		"id": 10,
+		"img": "/img/news/img-10.jpg",
+		"genre": "Обновления в меню",
+		"date": "10.06.2022",
+		"description": "Кто пойдёт на романтическое свидание от Ninja?"
+	},
+	{
+		"id": 11,
+		"img": "/img/news/img-1.jpg",
+		"genre": "Музыка",
+		"date": "10.06.2022",
+		"description": "6 нових музикальних альбомів для твого плей-листу"
+	},
+	{
+		"id": 12,
+		"img": "/img/news/img-2.jpg",
+		"genre": "Музыка",
+		"date": "10.06.2022",
+		"description": "Ninja вернули лосось"
+	},
+	{
+		"id": 13,
+		"img": "/img/news/img-3.jpg",
+		"genre": "Обновления в меню",
+		"date": "10.06.2022",
+		"description": "Привет! Мы уже на правом!"
+	},
+	{
+		"id": 14,
+		"img": "/img/news/img-4.jpg",
+		"genre": "Обновления в меню",
+		"date": "10.06.2022",
+		"description": "Ninja Sushi вернулись в Днепр!"
+	},
+	{
+		"id": 15,
+		"img": "/img/news/img-5.jpg",
+		"genre": "Обновления в меню",
+		"date": "10.06.2022",
+		"description": "Что посмотреть на Netflix?"
+	},
+	{
+		"id": 16,
+		"img": "/img/news/img-6.jpg",
+		"genre": "Обновления в меню",
+		"date": "10.06.2022",
+		"description": "Романтичный плейлист от Ninja!"
+	},
+	{
+		"id": 17,
+		"img": "/img/news/img-7.jpg",
+		"genre": "Обновления в меню",
+		"date": "10.06.2022",
+		"description": "Таинственное исчезновение роллов с лососем"
+	},
+	{
+		"id": 18,
+		"img": "/img/news/img-8.jpg",
+		"genre": "Обновления в меню",
+		"date": "10.06.2022",
+		"description": "Ninja Sushi в Киеве! Пока только на левом."
+	},
+	{
+		"id": 19,
+		"img": "/img/news/img-9.jpg",
+		"genre": "Обновления в меню",
+		"date": "10.06.2022",
+		"description": "Идеи для свидания на 14 февраля"
+	},
+	{
+		"id": 20,
+		"img": "/img/news/img-10.jpg",
+		"genre": "Обновления в меню",
+		"date": "10.06.2022",
+		"description": "Кто пойдёт на романтическое свидание от Ninja?"
+	},
+	{
+		"id": 21,
+		"img": "/img/news/img-5.jpg",
+		"genre": "Обновления в меню",
+		"date": "10.06.2022",
+		"description": "Кто пойдёт на романтическое свидание от Ninja?"
+	},
+	{
+		"id": 22,
+		"img": "/img/news/img-7.jpg",
+		"genre": "Обновления в меню",
+		"date": "10.06.2022",
+		"description": "Кто пойдёт на романтическое свидание от Ninja?"
+	}
+  ]
 }

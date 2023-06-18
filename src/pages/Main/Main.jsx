@@ -40,12 +40,12 @@ const Main = () => {
       <section className={styles.section}>
         <div className={styles.section__info}>
           <h2 className={cn(styles.sushi__title, 'second-title')}>Суши</h2>
-          <NavLink className={styles.section__suplink}>
+          <NavLink to='/sushi' className={styles.section__suplink}>
             <Button text="Смотреть все"></Button>
           </NavLink>
         </div>
         <ProductsList data={productsData} category='sushi' />
-        <NavLink className={styles.section__sublink}>
+        <NavLink to='/sushi' className={styles.section__sublink}>
           <Button
             className={styles.section__button}
             text="Смотреть все продукты"
@@ -55,12 +55,12 @@ const Main = () => {
       <section className={styles.section}>
         <div className={styles.section__info}>
           <h2 className={cn(styles.sushi__title, 'second-title')}>Роллы</h2>
-          <NavLink className={styles.section__suplink}>
+          <NavLink to='/rolles' className={styles.section__suplink}>
             <Button text="Смотреть все"></Button>
           </NavLink>
         </div>
         <ProductsList data={productsData} category='roles' />
-        <NavLink className={styles.section__sublink}>
+        <NavLink to='/rolles'  className={styles.section__sublink}>
           <Button
             className={styles.section__button}
             text="Смотреть все продукты"
@@ -70,12 +70,12 @@ const Main = () => {
       <section className={cn(styles.section, styles.section__nospace)}>
         <div className={styles.section__info}>
           <h2 className={cn(styles.sushi__title, 'second-title')}>Закуски</h2>
-          <NavLink className={styles.section__suplink}>
+          <NavLink to='/snacks'  className={styles.section__suplink}>
             <Button text="Смотреть все"></Button>
           </NavLink>
         </div>
         <ProductsList data={productsData} category='sets' />
-        <NavLink className={styles.section__sublink}>
+        <NavLink to='/snacks' className={styles.section__sublink}>
           <Button
             className={styles.section__button}
             text="Смотреть все продукты"
@@ -86,12 +86,12 @@ const Main = () => {
 	  <section className={styles.section}>
         <div className={styles.section__info}>
           <h2 className={cn(styles.sushi__title, 'second-title')}>Сеты</h2>
-          <NavLink className={styles.section__suplink}>
+          <NavLink to='/sets' className={styles.section__suplink}>
             <Button text="Смотреть все"></Button>
           </NavLink>
         </div>
         <ProductsList data={productsData} category='snacks' />
-        <NavLink className={styles.section__sublink}>
+        <NavLink to='/sets' className={styles.section__sublink}>
           <Button
             className={styles.section__button}
             text="Смотреть все продукты"
@@ -101,12 +101,12 @@ const Main = () => {
 	  <section className={styles.section}>
         <div className={styles.section__info}>
           <h2 className={cn(styles.sushi__title, 'second-title')}>Напитки</h2>
-          <NavLink className={styles.section__suplink}>
+          <NavLink to='/drinks' className={styles.section__suplink}>
             <Button text="Смотреть все"></Button>
           </NavLink>
         </div>
         <ProductsList data={productsData} category='drinks' />
-        <NavLink className={styles.section__sublink}>
+        <NavLink to='/drinks' className={styles.section__sublink}>
           <Button
             className={styles.section__button}
             text="Смотреть все продукты"

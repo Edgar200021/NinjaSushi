@@ -31,3 +31,9 @@ export const foodProperties = [
   { value: 'Вегетарианские', img: vegan },
   { value: 'Безлактозные', img: lactose },
 ]
+
+
+export const newsGenre = [
+	{value: 'Обновления в меню'},
+	{value: 'Музыка'}
+]

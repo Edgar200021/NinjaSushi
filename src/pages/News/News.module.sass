@@ -1,0 +1,21 @@
+@use '../../styles/absctract/_mixins'
+.main
+	grid-column: center-start / center-end
+	margin-bottom: 6rem
+	@include mixins.respond('mini-phone')
+	padding-top: 5rem
+	ul 
+		margin-bottom: 4rem
+	button 
+		display: block
+		@include mixins.button(var(--green-color), var(--white-color), var(--white-color), var(--white-color))
+		max-width: 26rem 
+		margin: 0 auto
+		@include mixins.respond('phone')
+			max-width: 32rem
+
+.news__end_descr
+	display: block 
+	text-align: center
+	display: none
+	@include mixins.font(2.5rem, 3rem, 700)

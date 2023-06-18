@@ -1,13 +1,15 @@
 import PropTypes from 'prop-types'
-import {Swiper, SwiperSlide} from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper'
 
-import 'swiper/css'
-import 'swiper/css/navigation'
+import { useDispatch } from 'react-redux'
 import { useParams } from 'react-router-dom'
-import { useEffect, useMemo, useState } from 'react'
+import { useState } from 'react'
 
 import Button from '../Button'
+
+import { addProduct } from '../../Store/basketSlice'
+import { addProduct as addFavorite } from '../../Store/favoriteSlice'
 
 import { getData } from '../../utils/fetchData'
 import { PRODUCTS_URL } from '../../constants/url'
@@ -17,7 +19,8 @@ import vegan from '../../assets/icons/vegan.svg'
 import lactose from '../../assets/icons/lactose.svg'
 
 import styles from './SingleItem.module.sass'
-
+import 'swiper/css'
+import 'swiper/css/navigation'
 
 const SingleItem = ({
   id,
@@ -27,10 +30,14 @@ const SingleItem = ({
   title,
   weight,
   components,
+  ingridients,
   volume,
   price,
 }) => {
+  const dispatch = useDispatch()
+  const [liked, setLiked] = useState(false)
 
+  const likedStyle = liked ? {backgroundColor: "#FF6633", color: "white"} : null
 
   return (
     <div className={styles.singleitem}>
@@ -73,39 +80,49 @@ const SingleItem = ({
             {weight ? 'г' : 'л'}
           </span>
           {components && (
-			<div className={styles.singleitem__slider}>
-			<span  style={{marginBottom: '12px', display: 'block'}}>Состав:</span>
-            <Swiper
-              spaceBetween={8}
-              slidesPerView={5}
-			  navigation={{
-				nextEl: '#next',
-				prevEl: '#prev',
-				clickable: true
-			  }}
-			modules={[Navigation]}
-            >
-			  <button id='prev' data-prev className={styles.singleitem__slider_btn}></button>
+            <div className={styles.singleitem__slider}>
+              <span style={{ marginBottom: '12px', display: 'block' }}>
+                Состав:
+              </span>
+              <Swiper
+                spaceBetween={8}
+                slidesPerView={5}
+                navigation={{
+                  nextEl: '#next',
+                  prevEl: '#prev',
+                  clickable: true,
+                }}
+                modules={[Navigation]}
+              >
+                <button
+                  id="prev"
+                  data-prev
+                  className={styles.singleitem__slider_btn}
+                ></button>
 
-              {components?.map(({ img, descr }) => {
-                return (
-                  <SwiperSlide key={descr}>
-                    <div className={styles.singleitem__ingridient}>
-                      <img
-                        className={styles.singleitem__ingridient_img}
-                        src={img}
-                        alt={descr}
-                      />
-                      <span className={styles.singleitem__ingridient_descr}>
-                        {descr}
-                      </span>
-                    </div>
-                  </SwiperSlide>
-                )
-              })}
-			<button id='next' data-next className={styles.singleitem__slider_btn}></button>
-            </Swiper>
-			</div>
+                {components?.map(({ img, descr }) => {
+                  return (
+                    <SwiperSlide key={descr}>
+                      <div className={styles.singleitem__ingridient}>
+                        <img
+                          className={styles.singleitem__ingridient_img}
+                          src={img}
+                          alt={descr}
+                        />
+                        <span className={styles.singleitem__ingridient_descr}>
+                          {descr}
+                        </span>
+                      </div>
+                    </SwiperSlide>
+                  )
+                })}
+                <button
+                  id="next"
+                  data-next
+                  className={styles.singleitem__slider_btn}
+                ></button>
+              </Swiper>
+            </div>
           )}
 
           <div className={styles.singleitem__lactose_toggle}>
@@ -129,12 +146,34 @@ const SingleItem = ({
             <span className={styles.singleitem__price}>
               <span>{price}</span>грн
             </span>
-            <Button text="В корзину">
+            <Button
+              onClick={() =>
+                dispatch(addProduct({ id, img, title, weight, volume, price }))
+              }
+              text="В корзину"
+            >
               <svg className={styles.singleitem__btn_icon}>
                 <use xlinkHref="/icons/sprite.svg#icon-basket" />
               </svg>
             </Button>
-            <Button>
+            <Button
+              onClick={() => {
+                dispatch(
+                  addFavorite({
+                    id,
+                    img,
+                    title,
+                    weight,
+                    ingridients,
+                    volume,
+                    price,
+                  })
+                )
+				setLiked(prev => !prev)
+              }}
+
+			  style={likedStyle}
+            >
               <svg className={styles.singleitem__btn_icon}>
                 <use xlinkHref="/icons/sprite.svg#icon-hearth" />
               </svg>

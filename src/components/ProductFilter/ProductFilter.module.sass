@@ -1,8 +1,16 @@
+@use '../../styles/absctract/_mixins'
+	
 .productfilter 
 	margin-bottom: 2.4rem
+	display: flex 
+	flex-direction: column 
+	gap: 10px
+	@include mixins.respond('phone')
+		margin-bottom: 6rem
 	&__subcategory 
 		display: flex 
 		justify-content: space-between
+		flex-wrap: wrap
 		align-items: center
 		gap: 2rem
 		margin-bottom: 4rem
@@ -12,3 +20,9 @@
 			display: flex
 			flex-wrap: wrap
 			gap: 8px
+	&__properties 
+		display: flex
+		flex-wrap: wrap
+		gap: 1rem
+		@include mixins.respond('phone')
+			order: -1

@@ -16,6 +16,7 @@ const Basket = ({ openBasket, onCloseBasket }) => {
   const basketProducts = useSelector(
     state => state.basketProducts.basketProducts
   )
+
   const classes = openBasket
     ? cn(styles.basket, styles.basket__active)
     : styles.basket

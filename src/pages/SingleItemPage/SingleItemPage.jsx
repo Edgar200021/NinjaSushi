@@ -17,7 +17,6 @@ import styles from './SingleItemPage.module.sass'
 const SingleItemPage = () => {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(false)
-  const [error, setError] = useState(false)
   const { id } = useParams()
   const navigate = useNavigate()
 
@@ -26,7 +25,6 @@ const SingleItemPage = () => {
     const data = await getData(url)
     if (!data) {
       setLoading(false)
-      setError(true)
       return
     }
 

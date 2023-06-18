@@ -32,8 +32,6 @@ const ProductItem = ({
     addBasketProduct = () =>
       dispatch(addProduct({ id, volume, img, title, weight, price }))
 
-
-
   return (
     <li data-product className={styles.product}>
       <ul data-labels className={styles.product__labels}>
@@ -44,14 +42,18 @@ const ProductItem = ({
         ))}
       </ul>
       <div data-box className={styles.product__img_box}>
-        <NavLink to="/2123">
+        <NavLink to={`/products/${id}`}>
           <img src={img} alt="Суши" className={styles.product__img} />
         </NavLink>
       </div>
       <ul data-filters className={styles.product__filters}>
         {filters?.map(filter => {
           const img =
-            filter === 'Острые' ? chili : filter === 'Вегетарианские' ? vegan : lactose
+            filter === 'Острые'
+              ? chili
+              : filter === 'Вегетарианские'
+              ? vegan
+              : lactose
 
           return (
             <li key={filter} className={styles.product__filter}>
@@ -91,7 +93,6 @@ const ProductItem = ({
         </div>
 
         <Button
-		
           onClick={() => {
             dispatch(
               pushProduct({
@@ -106,7 +107,9 @@ const ProductItem = ({
             )
             setIsFavorite(!isFavorite)
           }}
-		  style={isFavorite ? {backgroundColor: '#FF6633', color: 'white'} : null}
+          style={
+            isFavorite ? { backgroundColor: '#FF6633', color: 'white' } : null
+          }
         >
           <svg className={styles.product__actions_icon}>
             <use xlinkHref="/icons/sprite.svg#icon-hearth" />

@@ -5,6 +5,7 @@ import Sets from '../pages/Sets'
 import Snacks from '../pages/Snacks'
 import Drinks from '../pages/Drinks'
 import Sauce from '../pages/Sauce'
+import News from '../pages/News'
 import NotFoundPage from '../pages/NotFoundPage'
 
 const routeConfig = [
@@ -35,6 +36,10 @@ const routeConfig = [
   {
     path: '/sauce',
     element: Sauce,
+  },
+  {
+    path: '/news',
+    element: News,
   },
   {
     path: '*',

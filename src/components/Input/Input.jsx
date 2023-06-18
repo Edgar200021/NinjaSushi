@@ -6,6 +6,7 @@ const Input = ({
   value = '',
   text = '',
   name = '',
+  placeholder='',
   onChange,
   checked,
   children,
@@ -28,10 +29,8 @@ const Input = ({
     <input
       type={type}
       className={styles.input}
-      value={value}
-      name={name}
       onChange={onChange}
-      checked={checked}
+	  placeholder={placeholder}
     ></input>
   )
 }
@@ -41,6 +40,7 @@ Input.propTypes = {
   value: PropTypes.string,
   text: PropTypes.string,
   name: PropTypes.string,
+  placeholder: PropTypes.string,
   onChange: PropTypes.func,
   checked: PropTypes.bool,
 }

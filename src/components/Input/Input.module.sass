@@ -9,14 +9,27 @@
 	&:checked + span
 		border: 1px solid var(--accent-color)
 
-.input 
+.input[type='checkbox'], .input[type='radio']
 	width: 0 
 	height: 0 
 	position: absolute 
 	left: 0 
 	top: 0
 	visibility: hidden
-		
+	pointer-events: none
+
+.input[type='search']
+	position: relative
+	padding: 12px 16px 12px 52px		
+	border: 0
+	outline: 0 
+	transition: outline .3s ease
+	background: url('../../assets/icons/search.svg') var(--white-color) left 14px top 50% / 18px no-repeat
+	border-radius: var(--br-small)
+	@include mixins.respond('mini-phone')
+		@include mixins.font(2.4rem, 3rem, 700)
+	&:focus 
+		outline: 1px solid var(--accent-color)
 
 .label
 	display: inline-block
@@ -24,8 +37,12 @@
 	background-color: var(--white-color)
 	@include mixins.font(1.6rem, 2.4rem, 500)
 	cursor: pointer
+	@include mixins.respond('mini-phone')
+		@include mixins.font(2.4rem, 3rem, 700)
 	&:not(:last-child) 
 		margin-right: 8px
+
+
 
 .label[data-subcategory = 'radio']
 	span

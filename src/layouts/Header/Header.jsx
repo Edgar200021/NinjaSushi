@@ -77,17 +77,17 @@ const Header = () => {
               </NavLink>
             </li>
             <li className={styles.header__item}>
-              <NavLink to="/1" className={styles.header__link}>
+              <NavLink to="/2" className={styles.header__link}>
                 Доставка
               </NavLink>
             </li>
             <li className={styles.header__item}>
-              <NavLink to="/asda" className={styles.header__link}>
+              <NavLink to="/3" className={styles.header__link}>
                 О нас
               </NavLink>
             </li>
             <li className={styles.header__item}>
-              <NavLink to="/sd" className={styles.header__link}>
+              <NavLink to="/news" className={styles.header__link}>
                 Новости
               </NavLink>
             </li>

@@ -1,6 +1,10 @@
+@use '../../styles/absctract/_mixins'
+	
 .select 
 	border: none 
 	cursor: pointer 
 	background: none
 	font-weight: 400
 	outline: .1px solid var(--black-color)
+	@include mixins.respond('mini-phone')
+		@include mixins.font(2.4rem, 3rem, 700)
