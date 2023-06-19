@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# E-commerce SushiShop_FrontEnd
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+E-commerce website for food
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+* Adding to cart
+* Adding to favorites
+* Product filters
+* News filters
+* Payment
+* Registration/Login
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies/libraries used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ * ReactJS
+ * Redux Toolkit
+ * Sass modules
+ * Grid/Flexbox
+ * ClassName Library
+ * PropTypes Library 
+ * Swiper Library
 
-### `npm test`
+## Project Structure
+```
+├── public
+│   └── icons                                # Website favicon, svg sprites
+│  	└──img                     				 # Products photos
+├── src
+│   ├── assets             
+│   	├── fonts  							 # Font familys
+│   	├── icons                            # Icons  
+│   	├── img  							 # Some images    				
+│   ├── components          
+│  	 	├── Banner          
+│   	├── Basket          
+│   	├── BasketItem          
+│   	├── BestOffer          
+│   	├── BurgerMenu          
+│   	├── Button          
+│   	├── DownloadApp          
+│   	├── Favorite          
+│   	├── FormOrder          
+│   	├── Input          
+│   	├── Location          				# All components
+│   	├── Logo          
+│   	├── NewsFilter          			  
+│   	├── NewsItem          
+│   	├── NewsList          
+│   	├── Notification          
+│   	├── ProductFilter          
+│   	├── ProductItem          
+│   	├── ProductsList          
+│   	├── Select          
+│   	├── SingleItem          
+│   	├── Spinner          
+│   ├── constants  
+│   	├── address.js  					# Address arrays
+│   	├── category.js  					# Category arrays
+│   	├── url.js  						# Global URL
+│   ├── hooks   
+│   	├── useNews.js   					# Own hook for filter news
+│   	├── useProducts.js   				# Own hook for filter products
+│   ├── layouts          
+│  		 ├── Header          				# A component that is always present on the page
+│  		 ├── Footer          				# A component that is always present on the page        
+│   ├── pages          
+│   	├── App          					# A component in which all applications are assembled
+│   	├── Main                            # Main page of website
+│   	├── News          					# News page of website
+│   	├── Drinks          
+│   	├── Sushi          
+│   	├── Rolles          				# Product category pages
+│   	├── Sets          
+│   	├── Sauce          
+│   	├── NotFoundPage     				# The page in which it comes across automatically when the page you entered in 											  the url does not exist   
+│   	├── PlaceAnOrder    				# Ordering page      
+│   	├── SingleItemPage      			# Separate page for each product             
+│   ├── routes          
+│   	├── routeConfig.js      			# An array with routes   
+│   ├── services          
+│   ├── store
+│  	 	├── basketSlice.js					# Reducer for basket products
+│   	├── favoriteSlice.js				# Reducer for favorite products
+│   	├── newsSlice.js					# Reducer for news 
+│   	├── index.js						# Global store
+│   ├── styles  	        	
+│  		├── absctract 	                	# Mixins and variables are collected here 
+│   	├── base 	        		   		# basic page styles
+│   	├── utils 	        		   		# Helper classes 	        
+│   ├── utils 
+│	   ├── fetchData.js 					# Helper functions for request	
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installing
 
-### `npm run build`
+```
+git clone https://github.com/Edgar200021/NinjaSushi.git
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+npm start
+```
