@@ -25,8 +25,6 @@ const News = () => {
     filterByDescr: '',
   })
 
-  console.log(newsData)
-  console.log(generalData.length)
   const fetchData = async url => {
     setLoading(true)
     const data = await getData(url)

@@ -1,6 +1,11 @@
 
 @use '../../styles/absctract/_mixins'
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+	-webkit-appearance: none
+	margin: 0
+
 .input[type='radio']
 	&:checked + span 
 			background-color: var(--accent-color)
@@ -31,6 +36,17 @@
 	&:focus 
 		outline: 1px solid var(--accent-color)
 
+.input[type='text'], input[type='number']
+	width: 100%
+	padding: 1.2rem 1.6rem 
+	border-radius: var(--br-small)
+	border: none 
+	background-color: #F5F5F7
+	outline: 1px solid transparent
+	transition: outline .5s ease
+	&:focus 
+		outline: 1px solid var(--accent-color)
+
 .label
 	display: inline-block
 	border-radius: var(--br-small)
@@ -55,6 +71,7 @@
 		border: 1px solid transparent
 		&:hover 
 			border: 1px solid var(--accent-color)
+
 
 .text 
 	display: inline-block 

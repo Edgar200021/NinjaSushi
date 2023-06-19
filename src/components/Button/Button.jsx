@@ -3,9 +3,9 @@ import cn from 'classnames'
 import PropTypes from 'prop-types'
 import styles from './Button.module.sass'
 
-const Button = ({className = '', text, children, onClick = null, style = {} }) => {
+const Button = ({className = '', text, children, onClick = null, style = {}, type }) => {
   return (
-    <button onClick={onClick} className={cn(styles.button, className)} style={style}>
+    <button onClick={onClick} type={type} className={cn(styles.button, className)} style={style}>
       {text}
       {children}
     </button>

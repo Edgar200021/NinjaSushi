@@ -10,6 +10,8 @@ const Input = ({
   onChange,
   checked,
   children,
+  required = false,
+  dataAttr
 }) => {
   return type === 'radio' || type === 'checkbox' ? (
     <label data-subcategory={type} className={styles.label}>
@@ -20,6 +22,7 @@ const Input = ({
         name={name}
         onChange={onChange}
         checked={checked}
+		required
       ></input>
       <span className={styles.text}>
         {children} {text}
@@ -27,10 +30,13 @@ const Input = ({
     </label>
   ) : (
     <input
+	  data-value = {dataAttr}
+	  value={value}
       type={type}
       className={styles.input}
       onChange={onChange}
 	  placeholder={placeholder}
+	  required
     ></input>
   )
 }
