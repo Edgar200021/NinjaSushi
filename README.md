@@ -27,12 +27,12 @@ E-commerce website for food
 ```
 ├── public
 │   └── icons                                # Website favicon, svg sprites
-│  	└──img                     				 # Products photos
+│  	└──img                     				       # Products photos
 ├── src
 │   ├── assets             
-│   	├── fonts  							 # Font familys
-│   	├── icons                            # Icons  
-│   	├── img  							 # Some images    				
+│   	├── fonts  							               # Font familys
+│   	├── icons                              # Icons  
+│   	├── img  							                 # Some images    				
 │   ├── components          
 │  	 	├── Banner          
 │   	├── Basket          
@@ -44,7 +44,7 @@ E-commerce website for food
 │   	├── Favorite          
 │   	├── FormOrder          
 │   	├── Input          
-│   	├── Location          				# All components
+│   	├── Location          			        	# All components
 │   	├── Logo          
 │   	├── NewsFilter          			  
 │   	├── NewsItem          
@@ -57,41 +57,41 @@ E-commerce website for food
 │   	├── SingleItem          
 │   	├── Spinner          
 │   ├── constants  
-│   	├── address.js  					# Address arrays
-│   	├── category.js  					# Category arrays
-│   	├── url.js  						# Global URL
+│   	├── address.js  				            	# Address arrays
+│   	├── category.js  			             		# Category arrays
+│   	├── url.js  					              	# Global URL
 │   ├── hooks   
-│   	├── useNews.js   					# Own hook for filter news
-│   	├── useProducts.js   				# Own hook for filter products
+│   	├── useNews.js   				            	# Own hook for filter news
+│   	├── useProducts.js   			          	# Own hook for filter products
 │   ├── layouts          
-│  		 ├── Header          				# A component that is always present on the page
-│  		 ├── Footer          				# A component that is always present on the page        
+│  		 ├── Header          				          # A component that is always present on the page
+│  		 ├── Footer          				          # A component that is always present on the page        
 │   ├── pages          
-│   	├── App          					# A component in which all applications are assembled
-│   	├── Main                            # Main page of website
-│   	├── News          					# News page of website
+│   	├── App          				            	# A component in which all applications are assembled
+│   	├── Main                              # Main page of website
+│   	├── News          					          # News page of website
 │   	├── Drinks          
 │   	├── Sushi          
-│   	├── Rolles          				# Product category pages
+│   	├── Rolles          			           	# Product category pages
 │   	├── Sets          
 │   	├── Sauce          
-│   	├── NotFoundPage     				# The page in which it comes across automatically when the page you entered in 											  the url does not exist   
-│   	├── PlaceAnOrder    				# Ordering page      
-│   	├── SingleItemPage      			# Separate page for each product             
+│   	├── NotFoundPage     			            # The page in which it comes across automatically when the page you entered in  the url does not exist   
+│   	├── PlaceAnOrder    			            # Ordering page      
+│   	├── SingleItemPage      		        	# Separate page for each product             
 │   ├── routes          
-│   	├── routeConfig.js      			# An array with routes   
+│   	├── routeConfig.js      		        	# An array with routes   
 │   ├── services          
 │   ├── store
-│  	 	├── basketSlice.js					# Reducer for basket products
-│   	├── favoriteSlice.js				# Reducer for favorite products
-│   	├── newsSlice.js					# Reducer for news 
-│   	├── index.js						# Global store
+│  	 	├── basketSlice.js				          	# Reducer for basket products
+│   	├── favoriteSlice.js		          		# Reducer for favorite products
+│   	├── newsSlice.js				            	# Reducer for news 
+│   	├── index.js					              	# Global store
 │   ├── styles  	        	
-│  		├── absctract 	                	# Mixins and variables are collected here 
-│   	├── base 	        		   		# basic page styles
-│   	├── utils 	        		   		# Helper classes 	        
+│  		├── absctract 	                     	# Mixins and variables are collected here 
+│   	├── base 	        		   	          	# basic page styles
+│   	├── utils 	        		   	        	# Helper classes 	        
 │   ├── utils 
-│	   ├── fetchData.js 					# Helper functions for request	
+│	   ├── fetchData.js 				            	# Helper functions for request	
 ```
 
 ### Installing
