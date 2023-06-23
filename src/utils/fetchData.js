@@ -6,4 +6,22 @@ const getData = async url => {
   return await res.json()
 }
 
-export { getData }
+
+
+const postData = async (url, body) => {
+  const res = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+	body
+  })
+
+  if (!res.ok) {
+	return false
+  }
+
+  return await res.json()
+}
+
+export { getData, postData }

@@ -51,6 +51,7 @@ const BasketItem = ({
         </button>
       </div>
       <button
+	    data-delete
         onClick={() => {
           dispatch(removeProduct({ id }))
 		  dispatch(changeTotal({price: -price * count}))

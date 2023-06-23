@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import { useNavigate } from 'react-router-dom'
 
 import Button from '../Button'
 
@@ -8,6 +9,7 @@ import error from '../../assets/icons/error.svg'
 import styles from './Notification.module.sass'
 
 const Notification = ({ type = 'notFound' }) => {
+	const navigate = useNavigate()
   const img = type === 'notFound' ? notfound : error
   const text =
     type === 'notFound'
@@ -25,9 +27,7 @@ const Notification = ({ type = 'notFound' }) => {
         <p style={style} className={styles.notification__text}>
           Страница, которую вы ищите, временно не доступна или ее еже нет
         </p>
-        <NavLink to="/">
-          <Button text={btnText} />
-        </NavLink>
+          <Button text={btnText} onClick={() => navigate(type === 'notFound' ? '/' : -1 )} />
       </div>
     </div>
   )

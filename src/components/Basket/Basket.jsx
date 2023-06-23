@@ -3,6 +3,8 @@ import cn from 'classnames'
 
 import { useSelector } from 'react-redux'
 import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
+
 
 import Button from '../Button'
 import BasketItem from '../BasketItem'
@@ -79,7 +81,9 @@ const Basket = ({ openBasket, onCloseBasket }) => {
                   {total} <small>грн</small>
                 </span>
               </span>
-              <Button text="Оформить заказ" />
+			  <NavLink to='/order'>
+              <Button onClick={() => onCloseBasket(false)}  text="Оформить заказ" />
+			  </NavLink>
             </div>
           </>
         ) : null}

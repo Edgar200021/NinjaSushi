@@ -7,6 +7,7 @@ import Drinks from '../pages/Drinks'
 import Sauce from '../pages/Sauce'
 import News from '../pages/News'
 import PlaceAnOrder from '../pages/PlaceAnOrder'
+import OrderErrorPage from '../pages/OrderErrorPage'
 import NotFoundPage from '../pages/NotFoundPage'
 
 const routeConfig = [
@@ -43,8 +44,12 @@ const routeConfig = [
     element: News,
   },
   {
-	path: 'order',
+	path: '/order',
 	element: PlaceAnOrder
+  },
+  {
+	path: '/orderError',
+	element: OrderErrorPage
   },
   {
     path: '*',

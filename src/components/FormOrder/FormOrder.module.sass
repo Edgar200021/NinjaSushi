@@ -31,6 +31,16 @@
 	&__order 
 		position: relative
 		overflow: hidden
+		&_delivery 
+			height: 0
+			transform: scale(0)
+			pointer-events: none
+			transition: transform  .4s ease 
+		&_pickup
+			height: 0
+			transform: scale(0)
+			pointer-events: none
+			transition: transform .4s ease 
 		&_title
 			margin-bottom: 8px
 		&_zone 
@@ -174,5 +184,98 @@
 				width: 20px
 				height: 20px
 				background-color: var(--grey-color)
-
+		&_pickup
+			padding-top: 1rem
+			&_inputs
+				margin-bottom: 2.4rem
+				label 
+					background-color: #F5F5F7
+			&_descr 
+				display: inline-block
+				position: relative
+				@include mixins.font(1.4rem, 2rem, 400) 
+				color: #9E9E9E
+				padding-right: 1.5rem
+				margin-bottom: 4px
+				&::after 
+					content: '*'
+					position: absolute 
+					top: 0 
+					right: 0
+					color: var(--accent-color)
+	&__ordertime
+		&_title
+			margin-bottom: 8px
+		&_descr 
+			display: block
+			@include mixins.font(1.4rem, 2rem, 400)
+			color: #686870
+			margin-bottom: 2.4rem
+		&_selects
+			display: flex
+			gap: 1.2rem
+		&_select
+			width: 50%
+		&_selectDescr 
+			display: block
+			@include mixins.font(1.4rem, 2rem, 400)
+			color: #686870
+			margin-bottom: 4px
 	
+	&__method
+		&_title
+			margin-bottom: 8px
+		&_descr 
+			display: block
+			@include mixins.font(1.4rem, 2rem, 400)
+			color: #686870
+			margin-bottom: 2.4rem
+		&_label
+			position: relative
+			display: block
+			cursor: pointer
+			padding-left: 4rem
+			&:not(:last-child)
+				margin-bottom: 1.2rem
+			input
+				width: 0 
+				height: 0 
+				position: absolute 
+				left: 0 
+				top: 0
+				pointer-events: none 
+				&:checked + span 
+					border-color: var(--accent-color)
+				&:checked + span::before 
+					background-color: var(--accent-color)
+		&_decor
+			position: absolute
+			width: 24px 
+			height: 24px 
+			border: 1px solid #9E9E9E
+			border-radius: 50%
+			transition: border-color .3s ease
+			left: 0 
+			top: 50%
+			transform: translateY(-50%)
+			&::before
+				content: ''
+				position: absolute 
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				width: 14px 
+				height: 14px 
+				background-color: transparent
+				border-radius: 50%
+				transition: background-color .3s ease
+		input[type='number']
+			width: 18rem
+			&::placeholder	
+				text-align: end
+
+
+.active 
+	height: auto
+	transform: scale(1)
+	pointer-events: auto

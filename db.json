@@ -2,9 +2,16 @@
   "products": [
     {
       "id": 1,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/sushi/img-1.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Гункан лосось",
       "weight": 40,
       "ingridients": [
@@ -87,12 +94,23 @@
     },
     {
       "id": 2,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/sushi/img-2.png",
-      "filters": ["Острые", "Вегетарианские"],
+      "filters": [
+        "Острые",
+        "Вегетарианские"
+      ],
       "title": "Гункан креветка",
       "weight": 60,
-      "ingridients": ["Нори", "рис", "японский майонез", "бальзамик"],
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик"
+      ],
       "components": [
         {
           "img": "/img/ingridients/img-1.png",
@@ -133,14 +151,23 @@
       ],
       "price": 220,
       "category": "sushi",
-      "subcategory": ["Классические", "Феликсы", "Сладкие"],
+      "subcategory": [
+        "Классические",
+        "Феликсы",
+        "Сладкие"
+      ],
       "isOffer": false
     },
     {
       "id": 3,
-      "labels": ["hit"],
+      "labels": [
+        "hit"
+      ],
       "img": "/img/sushi/img-3.png",
-      "filters": ["Острые", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Безлактозные"
+      ],
       "title": "Нигири угорь",
       "weight": 30,
       "ingridients": [
@@ -179,17 +206,31 @@
       ],
       "price": 120,
       "category": "sushi",
-      "subcategory": ["Классические", "Маки", "Драконы", "Феликсы", "Сладкие"],
+      "subcategory": [
+        "Классические",
+        "Маки",
+        "Драконы",
+        "Феликсы",
+        "Сладкие"
+      ],
       "isOffer": false
     },
     {
       "id": 4,
-      "labels": ["new"],
+      "labels": [
+        "new"
+      ],
       "img": "/img/sushi/img-4.png",
-      "filters": ["Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Нигири угорь",
       "weight": 80,
-      "ingridients": ["Нори", "рис"],
+      "ingridients": [
+        "Нори",
+        "рис"
+      ],
       "components": [
         {
           "img": "/img/ingridients/img-1.png",
@@ -238,14 +279,18 @@
       ],
       "price": 300,
       "category": "sushi",
-      "subcategory": ["Классические"],
+      "subcategory": [
+        "Классические"
+      ],
       "isOffer": false
     },
     {
       "id": 5,
       "labels": [],
       "img": "/img/sushi/img-5.png",
-      "filters": ["Безлактозные"],
+      "filters": [
+        "Безлактозные"
+      ],
       "title": "Гункан с тунцом и трюфелем",
       "weight": 100,
       "ingridients": [
@@ -308,12 +353,22 @@
     },
     {
       "id": 6,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/sushi/img-6.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Гункан тунец спайси",
       "weight": 120,
-      "ingridients": ["Нори", "рис"],
+      "ingridients": [
+        "Нори",
+        "рис"
+      ],
       "components": [
         {
           "img": "/img/ingridients/img-1.png",
@@ -354,14 +409,22 @@
       ],
       "price": 140,
       "category": "sushi",
-      "subcategory": ["Феликсы", "Сладкие"],
+      "subcategory": [
+        "Феликсы",
+        "Сладкие"
+      ],
       "isOffer": false
     },
     {
       "id": 7,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/sushi/img-7.png",
-      "filters": ["Острые"],
+      "filters": [
+        "Острые"
+      ],
       "title": "Гункан угорь",
       "weight": 130,
       "ingridients": [
@@ -404,14 +467,23 @@
       ],
       "price": 300,
       "category": "sushi",
-      "subcategory": ["Сладкие"],
+      "subcategory": [
+        "Сладкие"
+      ],
       "isOffer": false
     },
     {
       "id": 8,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/sushi/img-8.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Нигири тунец",
       "weight": 70,
       "ingridients": [
@@ -450,14 +522,25 @@
       ],
       "price": 120,
       "category": "sushi",
-      "subcategory": ["Маки", "Драконы", "Сладкие"],
+      "subcategory": [
+        "Маки",
+        "Драконы",
+        "Сладкие"
+      ],
       "isOffer": false
     },
     {
       "id": 9,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/roles/img-1.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Филадельфия с лососем",
       "weight": 40,
       "ingridients": [
@@ -504,17 +587,30 @@
       ],
       "price": 190,
       "category": "roles",
-      "subcategory": ["Маки"],
+      "subcategory": [
+        "Маки"
+      ],
       "isOffer": true
     },
     {
       "id": 10,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/roles/img-2.png",
-      "filters": ["Острые", "Вегетарианские"],
+      "filters": [
+        "Острые",
+        "Вегетарианские"
+      ],
       "title": "Филадельфия с угрем",
       "weight": 320,
-      "ingridients": ["Нори", "рис", "японский майонез", "бальзамик"],
+      "ingridients": [
+        "Нори",
+        "рис",
+        "японский майонез",
+        "бальзамик"
+      ],
       "components": [
         {
           "img": "/img/ingridients/img-1.png",
@@ -571,9 +667,14 @@
     },
     {
       "id": 11,
-      "labels": ["hit"],
+      "labels": [
+        "hit"
+      ],
       "img": "/img/roles/img-3.png",
-      "filters": ["Острые", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Безлактозные"
+      ],
       "title": "Кратос",
       "weight": 320,
       "ingridients": [
@@ -632,17 +733,30 @@
       ],
       "price": 120,
       "category": "roles",
-      "subcategory": ["Классические", "Маки", "Драконы", "Сладкие"],
+      "subcategory": [
+        "Классические",
+        "Маки",
+        "Драконы",
+        "Сладкие"
+      ],
       "isOffer": false
     },
     {
       "id": 12,
-      "labels": ["new"],
+      "labels": [
+        "new"
+      ],
       "img": "/img/roles/img-4.png",
-      "filters": ["Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Ямамото",
       "weight": 310,
-      "ingridients": ["Нори", "рис"],
+      "ingridients": [
+        "Нори",
+        "рис"
+      ],
       "components": [
         {
           "img": "/img/ingridients/img-1.png",
@@ -691,14 +805,20 @@
       ],
       "price": 300,
       "category": "roles",
-      "subcategory": ["Классические", "Феликсы", "Сладкие"],
+      "subcategory": [
+        "Классические",
+        "Феликсы",
+        "Сладкие"
+      ],
       "isOffer": false
     },
     {
       "id": 13,
       "labels": [],
       "img": "/img/roles/img-5.png",
-      "filters": ["Безлактозные"],
+      "filters": [
+        "Безлактозные"
+      ],
       "title": "Запеченная креветка",
       "weight": 330,
       "ingridients": [
@@ -753,17 +873,30 @@
       ],
       "price": 280,
       "category": "roles",
-      "subcategory": ["Феликсы", "Сладкие"],
+      "subcategory": [
+        "Феликсы",
+        "Сладкие"
+      ],
       "isOffer": false
     },
     {
       "id": 14,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/roles/img-6.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Сырный с лососем",
       "weight": 350,
-      "ingridients": ["Нори", "рис"],
+      "ingridients": [
+        "Нори",
+        "рис"
+      ],
       "components": [
         {
           "img": "/img/ingridients/img-1.png",
@@ -804,14 +937,23 @@
       ],
       "price": 140,
       "category": "roles",
-      "subcategory": ["Запеченные", "Феликсы", "Сладкие"],
+      "subcategory": [
+        "Запеченные",
+        "Феликсы",
+        "Сладкие"
+      ],
       "isOffer": false
     },
     {
       "id": 15,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/roles/img-7.png",
-      "filters": ["Острые"],
+      "filters": [
+        "Острые"
+      ],
       "title": "Микаса",
       "weight": 235,
       "ingridients": [
@@ -874,14 +1016,26 @@
       ],
       "price": 300,
       "category": "roles",
-      "subcategory": ["Классические", "Маки", "Драконы", "Запеченные"],
+      "subcategory": [
+        "Классические",
+        "Маки",
+        "Драконы",
+        "Запеченные"
+      ],
       "isOffer": false
     },
     {
       "id": 16,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/roles/img-1.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Комбо Филадельфия",
       "weight": 325,
       "ingridients": [
@@ -932,14 +1086,26 @@
       ],
       "price": 120,
       "category": "roles",
-      "subcategory": ["Драконы", "Запеченные", "Феликсы", "Сладкие"],
+      "subcategory": [
+        "Драконы",
+        "Запеченные",
+        "Феликсы",
+        "Сладкие"
+      ],
       "isOffer": false
     },
     {
       "id": 17,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/sets/img-1.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Сет #1",
       "weight": 950,
       "ingridients": [
@@ -1002,14 +1168,20 @@
         "Феликсы",
         "Сладкие"
       ],
-
       "isOffer": true
     },
     {
       "id": 18,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/sets/img-2.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Сет #2",
       "weight": 895,
       "ingridients": [
@@ -1020,7 +1192,6 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
-
       "components": [
         {
           "img": "/img/ingridients/img-1.png",
@@ -1061,14 +1232,25 @@
       ],
       "price": 120,
       "category": "sets",
-      "subcategory": ["Классические", "Маки", "Драконы"],
+      "subcategory": [
+        "Классические",
+        "Маки",
+        "Драконы"
+      ],
       "isOffer": false
     },
     {
       "id": 19,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/sets/img-3.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Сет #3",
       "weight": 900,
       "ingridients": [
@@ -1119,14 +1301,24 @@
       ],
       "price": 120,
       "category": "sets",
-      "subcategory": ["Феликсы", "Сладкие"],
+      "subcategory": [
+        "Феликсы",
+        "Сладкие"
+      ],
       "isOffer": false
     },
     {
       "id": 20,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/sets/img-4.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Сет Осака",
       "weight": 252,
       "ingridients": [
@@ -1173,14 +1365,23 @@
       ],
       "price": 120,
       "category": "sets",
-      "subcategory": ["Сладкие"],
+      "subcategory": [
+        "Сладкие"
+      ],
       "isOffer": false
     },
     {
       "id": 21,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/sets/img-5.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Суши лосось в нори",
       "weight": 1600,
       "ingridients": [
@@ -1251,14 +1452,25 @@
       ],
       "price": 120,
       "category": "sets",
-      "subcategory": ["Запеченные", "Феликсы", "Сладкие"],
+      "subcategory": [
+        "Запеченные",
+        "Феликсы",
+        "Сладкие"
+      ],
       "isOffer": false
     },
     {
       "id": 22,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/sets/img-6.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Сет #7",
       "weight": 1400,
       "ingridients": [
@@ -1329,14 +1541,24 @@
       ],
       "price": 120,
       "category": "sets",
-      "subcategory": ["Феликсы", "Сладкие"],
+      "subcategory": [
+        "Феликсы",
+        "Сладкие"
+      ],
       "isOffer": false
     },
     {
       "id": 23,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/sets/img-7.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Сет #7",
       "weight": 1350,
       "ingridients": [
@@ -1407,14 +1629,25 @@
       ],
       "price": 120,
       "category": "sets",
-      "subcategory": ["Классические", "Феликсы", "Сладкие"],
+      "subcategory": [
+        "Классические",
+        "Феликсы",
+        "Сладкие"
+      ],
       "isOffer": false
     },
     {
       "id": 24,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/sets/img-8.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Гункан Сет",
       "weight": 1400,
       "ingridients": [
@@ -1473,14 +1706,24 @@
       ],
       "price": 120,
       "category": "sets",
-      "subcategory": ["Классические", "Маки"],
+      "subcategory": [
+        "Классические",
+        "Маки"
+      ],
       "isOffer": true
     },
     {
       "id": 25,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/snacks/img-1.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "components": [
         {
           "img": "/img/ingridients/img-1.png",
@@ -1509,7 +1752,6 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
-	  
       "price": 120,
       "category": "snacks",
       "subcategory": [
@@ -1520,14 +1762,20 @@
         "Феликсы",
         "Сладкие"
       ],
-
       "isOffer": false
     },
     {
       "id": 26,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/snacks/img-2.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Тартар из лосося с авокадо",
       "weight": 180,
       "ingridients": [
@@ -1538,7 +1786,7 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
-	  "components": [
+      "components": [
         {
           "img": "/img/ingridients/img-1.png",
           "descr": "Нори"
@@ -1590,9 +1838,16 @@
     },
     {
       "id": 27,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/snacks/img-3.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Салат Чука-Вакаме",
       "weight": 185,
       "ingridients": [
@@ -1603,7 +1858,7 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
-	  "components": [
+      "components": [
         {
           "img": "/img/ingridients/img-1.png",
           "descr": "Нори"
@@ -1663,14 +1918,26 @@
       ],
       "price": 120,
       "category": "snacks",
-      "subcategory": ["Классические", "Запеченные", "Феликсы", "Сладкие"],
+      "subcategory": [
+        "Классические",
+        "Запеченные",
+        "Феликсы",
+        "Сладкие"
+      ],
       "isOffer": false
     },
     {
       "id": 28,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/snacks/img-4.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Салат с киноа, авокадо и курицей",
       "weight": 252,
       "ingridients": [
@@ -1681,7 +1948,7 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
-	  "components": [
+      "components": [
         {
           "img": "/img/ingridients/img-1.png",
           "descr": "Нори"
@@ -1741,14 +2008,23 @@
       ],
       "price": 120,
       "category": "snacks",
-      "subcategory": ["Классические"],
+      "subcategory": [
+        "Классические"
+      ],
       "isOffer": false
     },
     {
       "id": 29,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/snacks/img-5.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Инари с тунцом и трюфелем",
       "weight": 60,
       "ingridients": [
@@ -1759,7 +2035,7 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
-	  "components": [
+      "components": [
         {
           "img": "/img/ingridients/img-1.png",
           "descr": "Нори"
@@ -1824,9 +2100,16 @@
     },
     {
       "id": 30,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/snacks/img-6.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Инари с морским гребешком и сыром",
       "weight": 60,
       "ingridients": [
@@ -1837,7 +2120,7 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
-	  "components": [
+      "components": [
         {
           "img": "/img/ingridients/img-1.png",
           "descr": "Нори"
@@ -1890,9 +2173,16 @@
     },
     {
       "id": 31,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/snacks/img-7.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Инари с лососем и авокадо",
       "weight": 69,
       "ingridients": [
@@ -1903,7 +2193,7 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
-	  "components": [
+      "components": [
         {
           "img": "/img/ingridients/img-1.png",
           "descr": "Нори"
@@ -1963,14 +2253,26 @@
       ],
       "price": 120,
       "category": "snacks",
-      "subcategory": ["Классические", "Маки", "Феликсы", "Сладкие"],
+      "subcategory": [
+        "Классические",
+        "Маки",
+        "Феликсы",
+        "Сладкие"
+      ],
       "isOffer": false
     },
     {
       "id": 32,
-      "labels": ["hit", "new"],
+      "labels": [
+        "hit",
+        "new"
+      ],
       "img": "/img/snacks/img-8.png",
-      "filters": ["Острые", "Вегетарианские", "Безлактозные"],
+      "filters": [
+        "Острые",
+        "Вегетарианские",
+        "Безлактозные"
+      ],
       "title": "Тартар микс",
       "weight": 225,
       "ingridients": [
@@ -1981,7 +2283,7 @@
         "трюфельная сальса",
         "кунжутное масло"
       ],
-	  "components": [
+      "components": [
         {
           "img": "/img/ingridients/img-1.png",
           "descr": "Нори"
@@ -2009,7 +2311,12 @@
       ],
       "price": 120,
       "category": "snacks",
-      "subcategory": ["Классические", "Маки", "Феликсы", "Сладкие"],
+      "subcategory": [
+        "Классические",
+        "Маки",
+        "Феликсы",
+        "Сладкие"
+      ],
       "isOffer": false
     },
     {
@@ -2019,7 +2326,12 @@
       "volume": 0.25,
       "price": 190,
       "category": "drinks",
-      "subcategory": ["Натуральные", "Газированные", "Алкогольные", "Домашние"],
+      "subcategory": [
+        "Натуральные",
+        "Газированные",
+        "Алкогольные",
+        "Домашние"
+      ],
       "isOffer": false
     },
     {
@@ -2029,7 +2341,10 @@
       "volume": 0.5,
       "price": 150,
       "category": "drinks",
-      "subcategory": ["Натуральные", "Домашние"],
+      "subcategory": [
+        "Натуральные",
+        "Домашние"
+      ],
       "isOffer": false
     },
     {
@@ -2039,7 +2354,9 @@
       "volume": 0.5,
       "price": 90,
       "category": "drinks",
-      "subcategory": ["Натуральные"],
+      "subcategory": [
+        "Натуральные"
+      ],
       "isOffer": false
     },
     {
@@ -2059,7 +2376,12 @@
       "volume": 1,
       "price": 60,
       "category": "drinks",
-      "subcategory": ["Натуральные", "Газированные", "Алкогольные", "Домашние"],
+      "subcategory": [
+        "Натуральные",
+        "Газированные",
+        "Алкогольные",
+        "Домашние"
+      ],
       "isOffer": false
     },
     {
@@ -2069,7 +2391,10 @@
       "volume": 30,
       "price": 40,
       "category": "drinks",
-      "subcategory": ["Алкогольные", "Домашние"],
+      "subcategory": [
+        "Алкогольные",
+        "Домашние"
+      ],
       "isOffer": false
     },
     {
@@ -2079,7 +2404,12 @@
       "volume": 0.33,
       "price": 100,
       "category": "drinks",
-      "subcategory": ["Натуральные", "Газированные", "Алкогольные", "Домашние"],
+      "subcategory": [
+        "Натуральные",
+        "Газированные",
+        "Алкогольные",
+        "Домашние"
+      ],
       "isOffer": false
     },
     {
@@ -2094,159 +2424,193 @@
     }
   ],
   "news": [
-	{
-		"id": 1,
-		"img": "/img/news/img-1.jpg",
-		"genre": "Музыка",
-		"date": "10.06.2022",
-		"description": "6 нових музикальних альбомів для твого плей-листу"
-	},
-	{
-		"id": 2,
-		"img": "/img/news/img-2.jpg",
-		"genre": "Музыка",
-		"date": "10.06.2022",
-		"description": "Ninja вернули лосось"
-	},
-	{
-		"id": 3,
-		"img": "/img/news/img-3.jpg",
-		"genre": "Обновления в меню",
-		"date": "10.06.2022",
-		"description": "Привет! Мы уже на правом!"
-	},
-	{
-		"id": 4,
-		"img": "/img/news/img-4.jpg",
-		"genre": "Обновления в меню",
-		"date": "10.06.2022",
-		"description": "Ninja Sushi вернулись в Днепр!"
-	},
-	{
-		"id": 5,
-		"img": "/img/news/img-5.jpg",
-		"genre": "Обновления в меню",
-		"date": "10.06.2022",
-		"description": "Что посмотреть на Netflix?"
-	},
-	{
-		"id": 6,
-		"img": "/img/news/img-6.jpg",
-		"genre": "Обновления в меню",
-		"date": "10.06.2022",
-		"description": "Романтичный плейлист от Ninja!"
-	},
-	{
-		"id": 7,
-		"img": "/img/news/img-7.jpg",
-		"genre": "Обновления в меню",
-		"date": "10.06.2022",
-		"description": "Таинственное исчезновение роллов с лососем"
-	},
-	{
-		"id": 8,
-		"img": "/img/news/img-8.jpg",
-		"genre": "Обновления в меню",
-		"date": "10.06.2022",
-		"description": "Ninja Sushi в Киеве! Пока только на левом."
-	},
-	{
-		"id": 9,
-		"img": "/img/news/img-9.jpg",
-		"genre": "Обновления в меню",
-		"date": "10.06.2022",
-		"description": "Идеи для свидания на 14 февраля"
-	},
-	{
-		"id": 10,
-		"img": "/img/news/img-10.jpg",
-		"genre": "Обновления в меню",
-		"date": "10.06.2022",
-		"description": "Кто пойдёт на романтическое свидание от Ninja?"
-	},
-	{
-		"id": 11,
-		"img": "/img/news/img-1.jpg",
-		"genre": "Музыка",
-		"date": "10.06.2022",
-		"description": "6 нових музикальних альбомів для твого плей-листу"
-	},
-	{
-		"id": 12,
-		"img": "/img/news/img-2.jpg",
-		"genre": "Музыка",
-		"date": "10.06.2022",
-		"description": "Ninja вернули лосось"
-	},
-	{
-		"id": 13,
-		"img": "/img/news/img-3.jpg",
-		"genre": "Обновления в меню",
-		"date": "10.06.2022",
-		"description": "Привет! Мы уже на правом!"
-	},
-	{
-		"id": 14,
-		"img": "/img/news/img-4.jpg",
-		"genre": "Обновления в меню",
-		"date": "10.06.2022",
-		"description": "Ninja Sushi вернулись в Днепр!"
-	},
-	{
-		"id": 15,
-		"img": "/img/news/img-5.jpg",
-		"genre": "Обновления в меню",
-		"date": "10.06.2022",
-		"description": "Что посмотреть на Netflix?"
-	},
-	{
-		"id": 16,
-		"img": "/img/news/img-6.jpg",
-		"genre": "Обновления в меню",
-		"date": "10.06.2022",
-		"description": "Романтичный плейлист от Ninja!"
-	},
-	{
-		"id": 17,
-		"img": "/img/news/img-7.jpg",
-		"genre": "Обновления в меню",
-		"date": "10.06.2022",
-		"description": "Таинственное исчезновение роллов с лососем"
-	},
-	{
-		"id": 18,
-		"img": "/img/news/img-8.jpg",
-		"genre": "Обновления в меню",
-		"date": "10.06.2022",
-		"description": "Ninja Sushi в Киеве! Пока только на левом."
-	},
-	{
-		"id": 19,
-		"img": "/img/news/img-9.jpg",
-		"genre": "Обновления в меню",
-		"date": "10.06.2022",
-		"description": "Идеи для свидания на 14 февраля"
-	},
-	{
-		"id": 20,
-		"img": "/img/news/img-10.jpg",
-		"genre": "Обновления в меню",
-		"date": "10.06.2022",
-		"description": "Кто пойдёт на романтическое свидание от Ninja?"
-	},
-	{
-		"id": 21,
-		"img": "/img/news/img-5.jpg",
-		"genre": "Обновления в меню",
-		"date": "10.06.2022",
-		"description": "Кто пойдёт на романтическое свидание от Ninja?"
-	},
-	{
-		"id": 22,
-		"img": "/img/news/img-7.jpg",
-		"genre": "Обновления в меню",
-		"date": "10.06.2022",
-		"description": "Кто пойдёт на романтическое свидание от Ninja?"
-	}
+    {
+      "id": 1,
+      "img": "/img/news/img-1.jpg",
+      "genre": "Музыка",
+      "date": "10.06.2022",
+      "description": "6 нових музикальних альбомів для твого плей-листу"
+    },
+    {
+      "id": 2,
+      "img": "/img/news/img-2.jpg",
+      "genre": "Музыка",
+      "date": "10.06.2022",
+      "description": "Ninja вернули лосось"
+    },
+    {
+      "id": 3,
+      "img": "/img/news/img-3.jpg",
+      "genre": "Обновления в меню",
+      "date": "10.06.2022",
+      "description": "Привет! Мы уже на правом!"
+    },
+    {
+      "id": 4,
+      "img": "/img/news/img-4.jpg",
+      "genre": "Обновления в меню",
+      "date": "10.06.2022",
+      "description": "Ninja Sushi вернулись в Днепр!"
+    },
+    {
+      "id": 5,
+      "img": "/img/news/img-5.jpg",
+      "genre": "Обновления в меню",
+      "date": "10.06.2022",
+      "description": "Что посмотреть на Netflix?"
+    },
+    {
+      "id": 6,
+      "img": "/img/news/img-6.jpg",
+      "genre": "Обновления в меню",
+      "date": "10.06.2022",
+      "description": "Романтичный плейлист от Ninja!"
+    },
+    {
+      "id": 7,
+      "img": "/img/news/img-7.jpg",
+      "genre": "Обновления в меню",
+      "date": "10.06.2022",
+      "description": "Таинственное исчезновение роллов с лососем"
+    },
+    {
+      "id": 8,
+      "img": "/img/news/img-8.jpg",
+      "genre": "Обновления в меню",
+      "date": "10.06.2022",
+      "description": "Ninja Sushi в Киеве! Пока только на левом."
+    },
+    {
+      "id": 9,
+      "img": "/img/news/img-9.jpg",
+      "genre": "Обновления в меню",
+      "date": "10.06.2022",
+      "description": "Идеи для свидания на 14 февраля"
+    },
+    {
+      "id": 10,
+      "img": "/img/news/img-10.jpg",
+      "genre": "Обновления в меню",
+      "date": "10.06.2022",
+      "description": "Кто пойдёт на романтическое свидание от Ninja?"
+    },
+    {
+      "id": 11,
+      "img": "/img/news/img-1.jpg",
+      "genre": "Музыка",
+      "date": "10.06.2022",
+      "description": "6 нових музикальних альбомів для твого плей-листу"
+    },
+    {
+      "id": 12,
+      "img": "/img/news/img-2.jpg",
+      "genre": "Музыка",
+      "date": "10.06.2022",
+      "description": "Ninja вернули лосось"
+    },
+    {
+      "id": 13,
+      "img": "/img/news/img-3.jpg",
+      "genre": "Обновления в меню",
+      "date": "10.06.2022",
+      "description": "Привет! Мы уже на правом!"
+    },
+    {
+      "id": 14,
+      "img": "/img/news/img-4.jpg",
+      "genre": "Обновления в меню",
+      "date": "10.06.2022",
+      "description": "Ninja Sushi вернулись в Днепр!"
+    },
+    {
+      "id": 15,
+      "img": "/img/news/img-5.jpg",
+      "genre": "Обновления в меню",
+      "date": "10.06.2022",
+      "description": "Что посмотреть на Netflix?"
+    },
+    {
+      "id": 16,
+      "img": "/img/news/img-6.jpg",
+      "genre": "Обновления в меню",
+      "date": "10.06.2022",
+      "description": "Романтичный плейлист от Ninja!"
+    },
+    {
+      "id": 17,
+      "img": "/img/news/img-7.jpg",
+      "genre": "Обновления в меню",
+      "date": "10.06.2022",
+      "description": "Таинственное исчезновение роллов с лососем"
+    },
+    {
+      "id": 18,
+      "img": "/img/news/img-8.jpg",
+      "genre": "Обновления в меню",
+      "date": "10.06.2022",
+      "description": "Ninja Sushi в Киеве! Пока только на левом."
+    },
+    {
+      "id": 19,
+      "img": "/img/news/img-9.jpg",
+      "genre": "Обновления в меню",
+      "date": "10.06.2022",
+      "description": "Идеи для свидания на 14 февраля"
+    },
+    {
+      "id": 20,
+      "img": "/img/news/img-10.jpg",
+      "genre": "Обновления в меню",
+      "date": "10.06.2022",
+      "description": "Кто пойдёт на романтическое свидание от Ninja?"
+    },
+    {
+      "id": 21,
+      "img": "/img/news/img-5.jpg",
+      "genre": "Обновления в меню",
+      "date": "10.06.2022",
+      "description": "Кто пойдёт на романтическое свидание от Ninja?"
+    },
+    {
+      "id": 22,
+      "img": "/img/news/img-7.jpg",
+      "genre": "Обновления в меню",
+      "date": "10.06.2022",
+      "description": "Кто пойдёт на романтическое свидание от Ninja?"
+    }
+  ],
+  "deliveryData": [
+    {
+      "id": 1,
+      "personalData": {
+        "name": "Edgar",
+        "phoneNumber": "093203925"
+      },
+      "address": [
+        {
+          "id": 1,
+          "city": "Киев",
+          "street": "Николая Краснова, 16",
+          "entrance": 5,
+          "floor": 3,
+          "apartment": 104,
+          "checked": true
+        }
+      ],
+      "note": [
+        "Не звонить в дверь",
+        "Оставить под дверью"
+      ],
+      "paymentMethod": "Наличными курьеру",
+      "orderTime": {
+        "day": "завтра",
+        "time": "ближайшее"
+      },
+      "surrender": "500",
+      "price": 120,
+      "orderType": "Самовывоз",
+      "city": "Одесса",
+      "restaurant": "Vanatur"
+    }
   ]
 }

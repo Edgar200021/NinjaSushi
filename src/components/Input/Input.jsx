@@ -3,13 +3,14 @@ import styles from './Input.module.sass'
 
 const Input = ({
   type = '',
-  value = '',
+  value,
   text = '',
   name = '',
   placeholder='',
   onChange,
   checked,
   children,
+  style,
   required = false,
   dataAttr
 }) => {
@@ -22,6 +23,7 @@ const Input = ({
         name={name}
         onChange={onChange}
         checked={checked}
+		style={style}
 		required
       ></input>
       <span className={styles.text}>
@@ -36,6 +38,7 @@ const Input = ({
       className={styles.input}
       onChange={onChange}
 	  placeholder={placeholder}
+	  style={style}
 	  required
     ></input>
   )
@@ -47,6 +50,7 @@ Input.propTypes = {
   text: PropTypes.string,
   name: PropTypes.string,
   placeholder: PropTypes.string,
+  style: PropTypes.object,
   onChange: PropTypes.func,
   checked: PropTypes.bool,
 }

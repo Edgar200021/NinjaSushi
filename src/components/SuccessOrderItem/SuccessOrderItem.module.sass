@@ -1,0 +1,24 @@
+@use '../../styles/absctract/_mixins'
+
+.successorder
+	&__item
+		display: grid 
+		grid-template-columns: max-content 1fr max-content
+		column-gap: 1.6rem
+		align-items: flex-end
+		&:not(:last-child)
+			margin-bottom: 12px
+		&:last-child 
+			display: block
+		&_descr
+			@include mixins.font(1.4rem, 2rem, 400)
+			color: #686870
+			@include mixins.respond('mini-phone')
+				@include mixins.font(2rem, 2rem, 400)
+		&_line
+			display: block
+			border: 1px dashed #D2D2D7
+		&_text
+			@include mixins.font(1.6rem, 2.4rem, 400)
+			@include mixins.respond('mini-phone')
+				@include mixins.font(2rem, 2.4rem, 400)

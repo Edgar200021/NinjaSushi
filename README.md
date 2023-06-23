@@ -75,7 +75,7 @@ E-commerce website for food
 │   	├── Rolles          				# Product category pages
 │   	├── Sets          
 │   	├── Sauce          
-│   	├── NotFoundPage     				# The page in which it comes across automatically when the page you entered in 											  the url does not exist   
+│   	├── NotFoundPage     				# The page in which it comes across automatically when the page you entered  											  the url does not exist   
 │   	├── PlaceAnOrder    				# Ordering page      
 │   	├── SingleItemPage      			# Separate page for each product             
 │   ├── routes          
