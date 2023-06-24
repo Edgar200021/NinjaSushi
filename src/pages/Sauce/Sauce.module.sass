@@ -1,5 +1,13 @@
+@use '../../styles/absctract/_mixins'
+	
+	
 .main 
 	grid-column: center-start / center-end
 	margin-bottom: 10rem
 	&__title
 		margin-bottom: 2.2rem
+	ul 
+		li[data-product]
+			@include mixins.respond('mini-phone')
+				&:nth-child(n + 5 ) 
+					display: grid

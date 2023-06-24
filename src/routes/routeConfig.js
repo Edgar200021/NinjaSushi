@@ -7,6 +7,8 @@ import Drinks from '../pages/Drinks'
 import Sauce from '../pages/Sauce'
 import News from '../pages/News'
 import PlaceAnOrder from '../pages/PlaceAnOrder'
+import Register from '../pages/Register'
+import Login from '../pages/Login'
 import OrderErrorPage from '../pages/OrderErrorPage'
 import NotFoundPage from '../pages/NotFoundPage'
 
@@ -46,6 +48,14 @@ const routeConfig = [
   {
 	path: '/order',
 	element: PlaceAnOrder
+  },
+  {
+	path: '/register',
+	element: Register
+  },
+  {
+	path: '/login',
+	element: Login
   },
   {
 	path: '/orderError',

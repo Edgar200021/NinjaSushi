@@ -7,7 +7,12 @@
 		margin-bottom: 2.4rem
 	&__container 
 		display: flex 
-		column-gap: 15rem
+		column-gap: 15rem 
+		@include mixins.respond('big-tablet') 
+			column-gap: 7rem
+		@include mixins.respond('tablet') 
+			flex-direction: column
+			gap: 5rem 0
 .box
 	width: 100%
 
@@ -27,6 +32,9 @@
 	li 
 		background-color: var(--white-color)
 		padding: 2rem 3.4rem
+		@include mixins.respond('big-tablet')
+			padding: 1rem .5rem 1rem 3rem
+			gap: .5rem
 		&:not(:last-child)
 			margin-bottom: 2rem
 		button[data-delete]
@@ -36,6 +44,9 @@
 				background-color: var(--accent-color)
 				color: var(--white-color)
 				transform: translateY(-65%)
+		h3 
+			@include mixins.respond('tablet')
+				white-space: nowrap
 
 .promocode 
 	display: flex
@@ -50,6 +61,8 @@
 	button
 		@include mixins.button(var(--green-color), var(--white-color), var(--white-color), var(--white-color))
 		width: 14rem
+		@include mixins.respond('phone')
+			width: 20rem
 
 
 .total
@@ -68,4 +81,8 @@
 		@include mixins.font(1.8rem, 2rem, 500)
 		color: #686870
 	button 
-		width: 18rem
+		width: 20rem
+		@include mixins.respond('phone')
+			width: 25rem
+		@include mixins.respond('mini-phone')
+			width: 30rem

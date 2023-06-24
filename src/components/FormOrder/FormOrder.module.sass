@@ -10,6 +10,8 @@
 		background-color: var(--white-color)
 		&:not(:last-child)
 			margin-bottom: 2rem
+		@include mixins.respond('tablet')
+			padding: 1rem
 	fieldset 
 		border: none
 	legend
@@ -91,6 +93,10 @@
 			cursor: pointer
 			&:not(:last-child)
 				margin-bottom: 1.2rem
+			@include mixins.respond('tablet')
+				padding: 1rem
+				div 
+					white-space: nowrap
 			input
 				width: 0 
 				height: 0 
@@ -121,38 +127,61 @@
 				background-color: transparent
 				border-radius: 50%
 				transition: background-color .3s ease
-
+			@include mixins.respond('tablet')
+				width: 20px 
+				height: 20px
+				&::before 
+					width: 10px 
+					height: 10px	
 		&_icon
 			width: 24px 
 			height: 24px
 		&_street
 			display: block
 			@include mixins.font(1.4rem, 2rem, 500)
+			@include mixins.respond('phone')
+				@include mixins.font(2rem, 2rem, 500)
 		&_apartment 
 			@include mixins.font(1.2rem, 1.6rem, 500)
 			color: #686870
+			@include mixins.respond('phone')
+				@include mixins.font(1.6rem, 1.6rem, 500)
 		&_btns 
 			display: flex
 			gap: 12px
 			margin-bottom: 2.4rem
+			@include mixins.respond('tablet')
+				flex-direction: column
 			button:first-child
 				@include mixins.button(var(--green-color), #F5F5F7, #F5F5F7, #F5F5F7)
 				max-width: 30rem
+				@include mixins.respond('big-tablet')
+					padding: .5rem
+				@include mixins.respond('tablet')
+					max-width: 100%
 			button:last-child
 				@include mixins.button(var(--accent-color), #F5F5F7, #F5F5F7, #F5F5F7)
 				max-width: 30rem
 				transition: all .5s ease
+				@include mixins.respond('big-tablet')
+					padding: .5rem
+				@include mixins.respond('tablet')
+					max-width: 100%
 		&_checkbox
 			display: flex
 			align-items: center 
 			column-gap: 16px
-			span
+			@include mixins.respond('phone')
+				column-gap: 5px
 			input
 				border-radius: 6px
 				width: 24px
 				height: 24px
 				accent-color: var(--accent-color)
 				background-color: var(--green-color)
+				@include mixins.respond('phone')
+					width: 20px 
+					height: 20px
 		&_modal
 			width: 100%
 			position: absolute 
@@ -174,6 +203,8 @@
 				visibility: visible
 			input:first-child, input:nth-child(2)
 				grid-column: span 2
+				@include mixins.respond('phone')
+					grid-column: 1 / -1
 			button 
 				max-width: 20rem
 				grid-column: 1 / -1
@@ -184,12 +215,19 @@
 				width: 20px
 				height: 20px
 				background-color: var(--grey-color)
+				@include mixins.respond('phone')
+					right: -10px
+					top: 5px
 		&_pickup
 			padding-top: 1rem
 			&_inputs
 				margin-bottom: 2.4rem
+				display: flex 
+				flex-wrap: wrap
+				gap: 10px
 				label 
 					background-color: #F5F5F7
+
 			&_descr 
 				display: inline-block
 				position: relative
@@ -230,6 +268,8 @@
 			@include mixins.font(1.4rem, 2rem, 400)
 			color: #686870
 			margin-bottom: 2.4rem
+			@include mixins.respond('phone')
+				@include mixins.font(1.8rem, 2rem, 400)
 		&_label
 			position: relative
 			display: block
@@ -258,6 +298,9 @@
 			left: 0 
 			top: 50%
 			transform: translateY(-50%)
+			@include mixins.respond('phone')
+				width: 20px 
+				height: 20px
 			&::before
 				content: ''
 				position: absolute 
@@ -269,6 +312,9 @@
 				background-color: transparent
 				border-radius: 50%
 				transition: background-color .3s ease
+				@include mixins.respond('phone')
+					width: 10px 
+					height: 10px
 		input[type='number']
 			width: 18rem
 			&::placeholder	

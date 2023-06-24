@@ -2490,7 +2490,7 @@
     {
       "id": 10,
       "img": "/img/news/img-10.jpg",
-      "genre": "Обновления в меню",
+      "genre": "Музыка",
       "date": "10.06.2022",
       "description": "Кто пойдёт на романтическое свидание от Ninja?"
     },
@@ -2579,38 +2579,13 @@
       "description": "Кто пойдёт на романтическое свидание от Ninja?"
     }
   ],
-  "deliveryData": [
+  "deliveryData": [],
+  "users": [
     {
-      "id": 1,
-      "personalData": {
-        "name": "Edgar",
-        "phoneNumber": "093203925"
-      },
-      "address": [
-        {
-          "id": 1,
-          "city": "Киев",
-          "street": "Николая Краснова, 16",
-          "entrance": 5,
-          "floor": 3,
-          "apartment": 104,
-          "checked": true
-        }
-      ],
-      "note": [
-        "Не звонить в дверь",
-        "Оставить под дверью"
-      ],
-      "paymentMethod": "Наличными курьеру",
-      "orderTime": {
-        "day": "завтра",
-        "time": "ближайшее"
-      },
-      "surrender": "500",
-      "price": 120,
-      "orderType": "Самовывоз",
-      "city": "Одесса",
-      "restaurant": "Vanatur"
+      "name": "Edgar",
+      "email": "edgarartur2000@mail.ru",
+      "password": "warfacexleb",
+      "id": 1
     }
   ]
 }

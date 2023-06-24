@@ -1,0 +1,92 @@
+@use '../../styles/absctract/_mixins'
+	
+	
+.form
+	max-width: 60rem
+	min-height: 500px
+	margin: 0 auto 
+	padding: 2rem 
+	display: flex 
+	flex-direction: column
+	gap: 2.5rem 0
+	align-items: center
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+	background-color: var(--white-color)
+	border-radius: var(--br-small)
+	&__descr
+		@include mixins.font(1.8rem, 2rem, 500)
+	&__fields 
+		width: 100%
+		margin-bottom: 3rem
+		& + button 
+			@include mixins.button(var(--white-color), var(--accent-color), var(--accent-color), var(--accent-color))
+			border-radius: var(--br-medium)
+			max-width: 30rem
+	&__field 
+		position: relative
+		padding-bottom: 4px 
+		&:not(:last-child)
+			border-bottom: 1px solid lighten(#9E9E9E, 30% ) 
+			margin-bottom: 1.2rem
+		&_descr
+			@include mixins.font(1.4rem, 1.5rem, 400)
+			color: #9E9E9E
+		.label 
+			cursor: pointer
+			color: #9E9E9E
+			input 
+				cursor: pointer
+				accent-color: var(--black-color)
+			span 
+				color: var(--accent-color)
+				text-decoration: underline
+		input 
+			background-color: transparent !important
+			padding: 0 !important
+			padding-right: 10px !important
+			outline: none !important
+			@include mixins.font(1.5rem, 0, 700)
+			&::placeholder
+				@include mixins.font(1.5rem, 0, 700)
+				padding-left: 2px
+		&_showpass 
+			position: absolute 
+			right: 0 
+			top: 50%
+			transform: translateY(-50%)
+			width: 40px 
+			height: 40px
+			display: inline-flex 
+			justify-content: center 
+			align-items: center	
+			&::after 
+				content: ''
+				display: none
+				position: absolute 
+				left: 50% 
+				top: 50% 
+				transform: translate(-50%, -50%) rotate(45deg)
+				width: 50% 
+				height: 2px 
+				background-color: var(--black-color)
+			img
+				width: 20px 
+				height: 20px
+			&_active 
+				&::after 
+					display: block
+	&__socials
+		display: flex 
+		align-items: center
+		gap: 0 5px 
+	&__social
+		width: 40px 
+		height: 40px
+	&__have
+		a 
+			color: var(--accent-color)
+			text-decoration: underline
+	&__forgot_descr
+		display: block
+		color:#9E9E9E
+		text-align: end
