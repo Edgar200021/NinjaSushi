@@ -15,6 +15,9 @@ import {
 } from '../../hooks/useProducts'
 import { drinksSubCategory } from '../../constants/category'
 
+import emptyImg from '../../assets/img/emptyproducts.jpg'
+import errorImg from '../../assets/img/error.jpg'
+
 import styles from './Drinks.module.sass'
 
 const Drinks = () => {
@@ -89,8 +92,8 @@ const Drinks = () => {
     filteredAndSortedData
   )
 
-  const emptyContent = !data.length ? <h3>Товаров пока нет</h3> : null
-  const error = fetchError ? <h3>произошла ошибка</h3> : null
+  const emptyContent = !data.length ? <><h3 className='empty-title'>Товаров пока нет</h3><img className='empty-img' src={emptyImg} alt="пустая коробка"/></> : null
+  const error = fetchError ? <><h3 className='error-title'>Произошла ошибка</h3><img className='error-img' src={errorImg} alt="Ошибка" /></> : null
 
   return (
     <main className={styles.main}>

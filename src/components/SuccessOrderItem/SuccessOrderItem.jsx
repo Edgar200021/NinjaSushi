@@ -2,14 +2,16 @@ import PropTypes from 'prop-types'
 
 import { memo } from 'react'
 
+import {months} from '../../constants/months'
+
 import styles from './SuccessOrderItem.module.sass'
 
 const SuccessOrderItem = memo(
   ({
     address = [],
-    time = '',
-    day = '',
-    paymentMethod = '',
+    time,
+    day,
+    paymentMethod,
     price = 0,
     surrender = 0,
     note = [],
@@ -17,6 +19,9 @@ const SuccessOrderItem = memo(
     restaurant,
     city,
   }) => {
+
+
+
     const content =
       orderType === 'Доставка' ? (
         <ul className={styles.successorder__list}>
@@ -39,7 +44,7 @@ const SuccessOrderItem = memo(
             <span className={styles.successorder__item_descr}>Время:</span>
             <span className={styles.successorder__item_line}></span>
             <span className={styles.successorder__item_text}>
-              {day} {time}
+              {day === 'завтра' ?  new Date().getDate() + 1 : new Date().getDate()} {months[new Date().getMonth()]} {time === 'ближайшее' ? String(new Date().getHours() + 1).padEnd(5, ':00') : time}
             </span>
           </li>
           <li className={styles.successorder__item}>

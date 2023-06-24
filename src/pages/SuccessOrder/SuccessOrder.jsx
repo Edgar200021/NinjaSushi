@@ -47,6 +47,8 @@ const SuccessOrder = () => {
     <h2 className="second-title"> Произошла ошибка</h2>
   ) : null
 
+  console.log(singleData?.orderTime.day)
+
   return (
     <main className={styles.main}>
       {loading ? (

@@ -1,5 +1,7 @@
 import ProductItem from '../ProductItem'
 
+import emptyImg from '../../assets/img/emptyproducts.jpg'
+
 import styles from './ProductsList.module.sass'
 
 const ProductsList = ({ data, category = '' }) => {
@@ -16,7 +18,10 @@ const ProductsList = ({ data, category = '' }) => {
   const content = data.length ? (
     <ul className={styles.productlist}>{elem}</ul>
   ) : (
-    <span className={styles.productlist__span}>Товары отсуствуют</span>
+    <>
+      <span className={styles.productlist__span}>Товары отсуствуют</span>
+	  <img className='empty-product' src={emptyImg} alt='пустая коробка'/>
+    </>
   )
 
   return content
