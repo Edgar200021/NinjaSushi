@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
+import Select from 'react-select'
 
 import Input from '../Input'
-import Select from '../Select'
 
 import { productSort } from '../../constants/category'
 
@@ -39,9 +39,10 @@ const ProductFilter = ({
         </div>
         <div className={styles.productfilter__subcategory_right}>
           <Select
-            sortByPrice={e => sortByPrice(e.target.value)}
-            sort={productSort}
-            defaultValue={defaultValue}
+            className={styles.react_select_container}
+            classNamePrefix={styles.react_select}
+			onChange={({value}) => sortByPrice(value)}
+            options={productSort}
           />
         </div>
       </div>

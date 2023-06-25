@@ -120,9 +120,11 @@ const Header = () => {
             </svg>
           </button>
           <button className={styles.header__btn}>
-            <svg className={styles.header__icon}>
-              <use xlinkHref="/icons/sprite.svg#icon-user" />
-            </svg>
+            <NavLink to='register'>
+              <svg className={styles.header__icon}>
+                <use xlinkHref="/icons/sprite.svg#icon-user" />
+              </svg>
+            </NavLink>
           </button>
           <button
             style={basketBtnStyle}

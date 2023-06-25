@@ -25,7 +25,6 @@ const Register = () => {
     if (!data) {
       setLoading(false)
       setError(true)
-      console.log('false')
       return
     }
 

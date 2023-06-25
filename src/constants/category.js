@@ -21,10 +21,11 @@ export const drinksSubCategory = [
 export const productSort = [
   {
     value: 'expensiveToCheap',
-    name: 'От дорогих к дешевым',
+    label: 'От дорогих к дешевым',
   },
-  { value: 'cheapToExpensive', name: 'От дешевых к дорогым' },
+  { value: 'cheapToExpensive', label: 'От дешевых к дорогым' },
 ]
+
 
 export const foodProperties = [
   { value: 'Острые', img: chili },
