@@ -2423,5 +2423,37 @@
       "isOffer": false
     }
   ],
-  "deliveryData": [ ]
+  "deliveryData": [
+    {
+      "id": 1,
+      "personalData": {
+        "name": "Edgar",
+        "phoneNumber": "0932934"
+      },
+      "address": [
+        {
+          "id": 2,
+          "city": "Львов",
+          "street": "Октябрьская, 6",
+          "entrance": 8,
+          "floor": 10,
+          "apartment": 25,
+          "checked": true
+        }
+      ],
+      "note": [
+        "Не звонить в дверь"
+      ],
+      "paymentMethod": "Наличными курьеру",
+      "orderTime": {
+        "day": "сегодня",
+        "time": "ближайшее"
+      },
+      "surrender": "500",
+      "price": 1540,
+      "orderType": "Доставка",
+      "city": "",
+      "restaurant": ""
+    }
+  ]
 }

@@ -12,7 +12,6 @@ const ProductFilter = ({
   subCategory,
   filterByProperty,
   sortByPrice,
-  defaultValue,
   onInput,
 }) => {
   return (

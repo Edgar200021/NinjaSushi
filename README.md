@@ -110,5 +110,7 @@ npm install
 ## Getting Started
 
 ```
+npx json-server -p 4000 db.json 
+npx nodemon server.js 
 npm start
 ```
